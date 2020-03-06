@@ -1,0 +1,448 @@
+
+<!--
+*
+* © 2015 Northeastern University
+* College of Computer and Information Science (CCIS)
+*
+*
+-->
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- styles -->
+
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/main_styles.css">
+
+    <!-- source code highlighting using Prism -->
+    <link href="css/prism.css" rel="stylesheet" />
+
+
+    <!-- scripts -->
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+
+
+    <title>Computer Science: C Programming Tutorial</title>
+
+    <script>
+        $(function() {
+            $( "#top_tabs" ).tabs();
+
+        });
+
+        $(function() {
+            $( "#bottom_tabs" ).tabs();
+
+        });
+
+
+    </script>
+
+
+</head>
+
+<body>
+<!-- source code highlighting using Prism -->
+<script src="js/prism.js"></script>
+<script>
+
+</script>
+
+    <div id="banner">
+        <img id="banner_img" src="">
+        <span id="course_title"><span id="course_num">Computer Science:</span> C Programming Tutorial</span>
+        <div class="clear_shim"></div>
+    </div>
+
+
+<section id="main_container">
+
+    <div id="left_nav">
+        <ul>
+            <a href="index.html"><li>HOME</li></a>
+            <a href="syllabus.html"><li>SYLLABUS</li></a>
+<!--
+            <a href="codewalks.html"><li>CODEWALKS</li></a>
+-->
+            <a href="schedule.html"><li>SCHEDULE</li></a>
+            <li>MODULES</li>
+            <li> <ul>
+                <a href="module0.html"><li>0</li></a>
+                <a href="module1.html"><li>1</li></a>
+                <a href="module2.html"><li>2</li></a>
+                <a href="module3.html"><li>3</li></a>
+                <a href="module4.html" class="active_pg"><li>4</li></a>
+                <a href="module5.html"><li>5</li></a>
+                <a href="module6.html"><li>6</li></a>
+<!--
+                <a href="module8.html"><li>8</li></a>
+                <a href="module9.html"><li>9</li></a>
+                <a href="module10.html"><li>10</li></a>
+-->
+            </ul>
+            </li>
+            <a href="http://piazza.com/ccs.neu.edu/fall2018/cs5001/home" target="_blank"><li>PIAZZA</li></a>
+        </ul>
+
+    </div>
+
+
+    <div id="tab_container"> <!-- Tab Container -->
+
+        <div id="top_tabs">
+            <ul>
+                <li><a href="#ttab-1">Overview</a></li>
+                <li><a href="#ttab-3">Objectives</a></li>
+            </ul>
+            <hr class="tabs_hr"/>
+            <div id="ttab-1" class="t_div mod_overview">
+                <h3>Memory management, Modularization, and Unit Testing</h3>
+                <p>
+                We begin this module by learning about how memory is
+                managed in a C program, and about a new capability for dynamically creating
+                and managing data in a portion of memory that is independent of fixed
+                global storage and the local storage within a given function.
+                </p>
+                Next we will learn about how to modularize program functionality into
+                multiple files. Often, each module contains the data definitions
+                and funcitons for a single data type, with the main function and
+                associated logic in their own files.
+                </p>
+                <p>
+                Finally, we will also look at the concept of unit testing and at
+                strategies for unit testing a program, and learn how to
+                use the CUnit unit test framework to imlement unit tests that are
+                included in either their own module or in the same moudule as the
+                main function.
+                </p>
+            </div>
+
+            <div id="ttab-3" class="t_div objectives">
+<!--
+                <ol>
+                    <li>Learn about command shells as a way to interact with the
+                    operating system.</li>
+                    <li>Review small subset of the available command line tools.</li>
+                    <li>See how command shells allow command line tools to be combined
+                    to perform more advanced functions.</li>
+                    <li>Review the facilities provided by a command shell to create
+                    commplete applications by creating shell scripts.</li>
+                    <li>Learn create and edit shell scripts using a visual text editor.</li>
+                </ol>
+-->
+            </div>
+        </div>
+
+        <div id="bottom_tabs">
+            <ul>
+                <li><a href="#btab-1">Lecture 11</a></li>
+                <li><a href="#btab-2">Lecture 12</a></li>
+                <li><a href="#btab-3">Lecture 13</a></li>
+                <li><a href="#btab-5">Assignment 7</a></li>
+                <li><a href="#btab-4">Exercises</a></li>
+
+            </ul>
+            <hr class="tabs_hr"/>
+            <div id="btab-1" class="t_div readings" >
+                <h3>Memory Management</h3>
+				<p>
+                In this lecture, we will learn about how memory is managed in a C program,
+                including the stack, the constant pool, and the heap.  We will also learn
+                about functions that enable us to use the C heap for dynamically creating
+                and managing data in a this portion of memory that is independent of fixed
+                global storage and the local storage within a given function.
+                </p>
+
+                <h3>Readings</h3>
+                  <h4>Class presentation</h4>
+            	  <ul class="readling_list">
+                    <li>
+                    <a target="_blank" class="hlink" href=
+                    "resources/Lecture_11_Notes.pdf">Lecture 11 presentation</a>
+                    </li>
+                  </ul>
+                  <h4>C Tutorial readings</h4>
+                  <ul>
+                    <li>
+                    <a target="_blank" class="hlink" href=
+                    "https://www.tutorialspoint.com/cprogramming/c_memory_management.htm">
+                    Memory Management</a>
+                    </li>
+                  </ul>
+            </div>
+
+            <div id="btab-2" class="t_div readings" >
+                <h3>Modularizing C Programs Into Separate Compilation Units</h3>
+				<p>
+                In this lecture, we will learn about how to modularize program functionality
+                into multiple files to make code easier to create and manage. In many cases,
+                each file contain the data definitions and funcitons for a single data type,
+                with the main function and associated logic in their own files.
+                </p>
+                <p>
+                We will also learn about the concept of sharing declarations for the the
+                functions in a given file with functions in other files using external
+                storage declarations, and about how to use the C preprocessor to put
+                related declarations for data types and external function declarations
+                into their own files and include them in files that require them.
+                </p>
+
+
+                <h3>Readings</h3>
+                  <h4>Class presentation</h4>
+            	  <ul class="readling_list">
+                    <li>
+                    <a target="_blank" class="hlink" href=
+                    "resources/Lecture_12_Notes.pdf">Lecture 12 presentation</a>
+                    </li>
+                    <li>
+                    <a target="_blank" class="hlink" href=
+                    "resources/Lecture_12_Supplemental.pdf">Lecture 12 supplemntal presentation</a> <br/>Data model sequence for creating Publisher and three Journals
+                    </li>
+                  </ul>
+                  <h4>C Tutorial readings</h4>
+                  <ul>
+                    <li>
+                    <a target="_blank" class="hlink" href=
+                    "https://www.tutorialspoint.com/cprogramming/c_storage_classes.htm">External Storage Class</a> from TutorialsPoint
+                    </li>
+                    <li>
+                    <a target="_blank" class="hlink" href=
+                    "https://www.tutorialspoint.com/cprogramming/c_header_files.htm">Header Files</a> from TutorialsPoint
+                    </li>
+                    <li>
+                    <a target="_blank" class="hlink" href=
+                    "https://www.tutorialspoint.com/cprogramming/c_preprocessors.htm">C Preprocessor</a> from TutorialsPoint
+                    </li>
+                    <li>
+                    <a target="_blank" class="hlink" href=
+                    "https://en.wikipedia.org/wiki/C_preprocessor">C preprocessor</a> from Wikipedia
+                    </li>
+                    <li>
+                    <a target="_blank" class="hlink" href=                    "https://www.tutorialspoint.com/c_standard_library/c_function_scanf.htm">sscanf()</a> from TutorialsPoint
+                    </li>
+                  </ul>
+            </div>
+
+            <div id="btab-3" class="t_div readings" >
+                <h3>Unit Testing</h3>
+				<p>
+                Testing the data defintions and code we create is an extremely important
+                part of software development. As we create functionality and modify it over
+                time, designing and creating good unit tests enables us to ensure that the
+                code we write performs correctly, both as it is being developed and when
+                it is modified over time.
+                </p>
+                <p>
+                Until now, we have included simple calls to functions as a way to verify
+                they work correctly. Now we will learn about the strategies of designing
+                unit tests, and use the <strong>CUnit</strong> unit test framework to
+                imlement unit tests that are included in either their the main function
+                module or in their own module.
+                </p>
+
+                <h3>Readings</h3>
+                  <h4>Class presentation</h4>
+            	  <ul class="readling_list">
+                    <li>
+                    <a target="_blank" class="hlink" href=
+                    "resources/Lecture_13_Notes.pdf">Lecture 13 presentation</a>
+                    </li>
+                    <li>
+                    <a target="_blank" class="hlink" href=
+                    "resources/Lecture_13_supplemental.pdf">Lecture 13 supplemental presentation</a> <br/>Data model for CUnit unit registry.
+                    </li>
+                  </ul>
+                  <h4>C Tutorial readings</h4>
+                  <ul>
+                    <li>
+                    <a target="_blank" class="hlink" href=
+                    "http://cunit.sourceforge.net/doc/index.html">CUnit Users Guide</a>
+                    </li>
+                    <li>
+                    <a target="_blank" class="hlink" href=
+                    "http://cunit.sourceforge.net/doxdocs/index.html">CUnit Programmers Reference</a>
+                    </li>
+                  </ul>
+            </div>
+
+            <div id="btab-4" class="t_div assignment">             	<h3>Additional Exercises</h3>
+                <p>Here are additional exercises that will give you more practice with the subject material in this module.</p>
+                <ol>
+                <li>
+                Write a function <em>createPoint()</em> that takes two double
+                paramaters <em>x</em> and <em>y</em>, and returns a pointer to
+                a <em>Point</em> that is dynamically allocated and initialized
+                by the function. Assume the definition of the typedef <em>Point</em>
+                struct we have used in class and in earlier exercises.
+                </li>
+
+                <li>
+                Write a function <em>createCircle()</em> that takes a pointer
+                to a center <em>Point</em> and a double radius. The function
+                returns a pointer to a <em>Circle</em> that is dymanically
+                allocated and initiailized by the function. The function
+                copies the information from the input Point to the embedded
+                <em>Point</em> in the <em>Circle</em>.  Assume the definition
+                of the typedef <em>Circle</em> struct we have used in class and
+                in earlier exercises.
+                </li>
+
+                <li>
+                Write a function <em>createRectangle()</em> that takes a pointer
+                to the upper left <em>Point</em>, a double width and height. The
+                function returns a pointer to a <em>Rectangle</em> that is dymanically
+                allocated and initiailized by the function. The function
+                copies the information from the input Point to the embedded
+                <em>Point</em> in the <em>Rectangle</em>.  Assume the definition
+                of the typedef <em>Rectangle</em> struct we have used in class and
+                in earlier exercises.
+                </li>
+
+                <li>
+                Write a function <em>getBoundingBox()</em> that takes a pointer
+                to a <em>Circle</em>. The function returns a pointer to a
+                <em>Rectangle</em> that is set to the bounding box for for the
+                <em>Circle</em>. Use the <em>createRectangle()</em> function from the
+                previous problem to create and initialize the <em>Rectangle</em>.
+                </li>
+
+                <p>The previous four problems would be similar to a final exam question,
+                with the <em>Point</em>, <em>Circle</em>, and <em>Rectangle</em>
+                struct typedefs provided.</p>
+
+                <li>
+                Write a function <em>repString()</em> that takes a pointer to a string and an unsigned int count.
+                The function creates and returns a pointer to a string that
+                is dynamically allocated and initialized to <em>n</em> repetitions of the input string.
+                </li>
+
+                <p>The previous problem would be similar to a final exam question</p>
+
+                <li>
+                Write a function <em>splitString()</em> that splits a string into a
+                list of strings at the delimiter character <em>ch</em>. The function
+                dynamically allocates storage for a copy of the input string, and
+                replaces each occurence of <em>ch</em> in the copy by the null
+                character (<em>'\0'</em>). It also sets the character after the final
+                null character in the copy to the character '\377' (octal), to mark the
+                end of the list. The function returns a pointer to the string list copy.
+                </li>
+
+                <p>The previous problem would be similar to a final exam question.
+                The following two functions would be provided for testing purposes.</p>
+
+                <li>
+                Write a function <em>nextSplitString()</em> that, given a pointer to
+                a split string list, returns a pointer to the beginning of the next
+                string in the list, or NULL if there is no next string. The
+                start of the next string in the list is the current pointer plus the
+                string length plus 1.
+                </li>
+
+                <li>
+                Write a function <em>splitStringSize()</em> that, given a pointer to
+                a split string list, returns the number of strings in the list
+                including the current one as a <em>size_t</em>.
+                </li>
+                </ol>
+            </div>
+
+            <div id="btab-5" class="t_div assignment" >
+                <ul class="assign_info">
+                    <!--<li>CODE: <a href="">mod3_code.rkt</a></li>-->
+                    <!--<li>EXAMPLE: <a href="">mod3_ex.rkt</a></li>-->
+                    <li>
+                    DUE DATE: <span class="due_date">Wed, 10 Oct before 11:59:59pm</span><br/>
+                    </li>
+                </ul>
+                This assignment is to make several enhancements to the code
+                in the lecture-13 repository.
+                <p>
+                For this assignment, first add to or enhance the unit tests
+                in "main_v1.c", include "main_v1.c" in your build and exclude
+                "main_v2.c", and run the program.
+                Next, add or enhance the unit tests in
+                "publisher_test.c" and/or "journal_test.c", include "main_v2.c"
+                in your build and exclude "main_v1.c", and run the program again.
+                </p>
+                <p>
+                Check in all files from the lecture-13 repository, whether or
+                not you modified, them so the graders can run your program.
+                </p>
+                <ol>
+                <li>
+                Modify the <strong>Journal</strong> struct, changing the fixed
+                length  <em>name</em> field to a character array pointer
+                (<strong>char*</strong>). In <em>newJournal()</em>,
+                add code to initialize the field with a dynamically allocated
+                string for the <em>name</em> parameter. Modify the
+                <em>deleteJournal()</em> function to free the <em>name</em>
+                string before freeing the <strong>Journal</strong>
+                </li>
+                <li>
+                Modify the <strong>Publisher</strong> struct, changing the fixed
+                length <em>name</em> field to a character array pointer
+                (<strong>char*</strong>). In <em>newPublisher(),</em>
+                add code to initialize the field with a dynamically allocated
+                string for the <em>name</em> parameter. Modify the
+                <em>deletePublisher()</em> function to free the <em>name</em>
+                string before freeing the <strong>Publisher</strong>.
+                </li>
+                <li>
+                Modify the <em>deletePublisher()</em> function to delete the
+                <strong>Journal</strong> structs in the <em>journals</em> array
+                before freeing the <em>journals</em> list and the
+                <strong>Publisher</strong>. Enhance the
+                <strong>Publisher</strong> unit tests
+                to call <em>deletePublisher()</em> on the test publisher to
+                ensure that its journals are deleted. To verify that it returns
+                successfully, call <em>CU_PASS("Publisher deleted.")</em>
+                after calling <em>deletePublisher()</em>
+                </li>
+                <li>
+                Implement a function <em>getJournalForIssn()</em> in
+                "publisher.c" that takes a const <strong>Publisher</strong>
+                pointer <em>publisher</em> and a <strong>Issn</strong>
+                <em>issn</em>.
+                The function returns a pointer to a <em>Journal</em> in the
+                <em>journals</em> array whose <em>issn</em> field matches the
+                specified <em>issn</em>. If a matching <em>Journal</em> is not
+                found, the function returns <em>NULL</em>. Include a declaration
+                for the new function in "publisher.h" and add unit tests for
+                this new function.
+                </li>
+                <li>
+                Enhance the <em>newJournal()</em> function to first check
+                whether a <strong>Journal</strong> with the same <em>issn</em>
+                has already been added to the publisher using
+                <em>getJournalForIssn()</em>. If so, <em>newJournal()</em>
+                returns a pointer to the existing <em>Journal</em>. Otherwise,
+                it creates and initializes a new <strong>Journal</strong>,
+                calls <em>addJournalToPublisher()</em>, and returns a pointer
+                to the new <strong>Journal</strong>. Enhance the unit tests for
+                <em>newJournal()</em> to test this new functionality, and modify
+                any other unit tests as necessary.
+                </li>
+              </ol>
+          </div>
+        </div>
+
+    </div> <!-- END Tab Container -->
+
+</section>
+
+
+</body>
+
+</html>

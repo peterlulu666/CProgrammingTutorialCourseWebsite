@@ -1,0 +1,557 @@
+
+<!--
+*
+* © 2015 Northeastern University
+* College of Computer and Information Science (CCIS)
+*
+*
+-->
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- styles -->
+
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/main_styles.css">
+
+    <!-- source code highlighting using Prism -->
+    <link href="css/prism.css" rel="stylesheet" />
+
+
+    <!-- scripts -->
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+
+
+    <title>Computer Science: C Programming Tutorial</title>
+
+    <script>
+        $(function() {
+            $( "#top_tabs" ).tabs();
+
+        });
+
+        $(function() {
+            $( "#bottom_tabs" ).tabs();
+
+        });
+
+
+    </script>
+
+
+</head>
+
+<body>
+<!-- source code highlighting using Prism -->
+<script src="js/prism.js"></script>
+<script>
+
+</script>
+
+    <div id="banner">
+        <img id="banner_img" src="">
+        <span id="course_title"><span id="course_num">Computer Science:</span> C Programming Tutorial</span>
+        <div class="clear_shim"></div>
+    </div>
+
+
+<section id="main_container">
+
+    <div id="left_nav">
+        <ul>
+            <a href="index.html"><li>HOME</li></a>
+            <a href="syllabus.html"><li>SYLLABUS</li></a>
+<!--
+            <a href="codewalks.html"><li>CODEWALKS</li></a>
+-->
+            <a href="schedule.html"><li>SCHEDULE</li></a>
+            <li>MODULES</li>
+            <li> <ul>
+                <a href="module0.html"><li>0</li></a>
+                <a href="module1.html"><li>1</li></a>
+                <a href="module2.html"><li>2</li></a>
+                <a href="module3.html" class="active_pg"><li>3</li></a>
+                <a href="module4.html"><li>4</li></a>
+                <a href="module5.html"><li>5</li></a>
+                <a href="module6.html"><li>6</li></a>
+<!--
+                <a href="module8.html"><li>8</li></a>
+                <a href="module9.html"><li>9</li></a>
+                <a href="module10.html"><li>10</li></a>
+-->
+            </ul>
+            </li>
+            <a href="http://piazza.com/ccs.neu.edu/fall2018/cs5001/home" target="_blank"><li>PIAZZA</li></a>
+        </ul>
+
+    </div>
+
+
+    <div id="tab_container"> <!-- Tab Container -->
+
+        <div id="top_tabs">
+            <ul>
+                <li><a href="#ttab-1">Overview</a></li>
+                <li><a href="#ttab-3">Objectives</a></li>
+            </ul>
+            <hr class="tabs_hr"/>
+            <div id="ttab-1" class="t_div mod_overview">
+                <h3>Definining New Types and Modeling Data</h3>
+                <p>
+                When representing more complex kinds of information, it is useful to
+                create custom data types that closely match the structure of our data.
+                The ability to define new data types and to create suites of functions
+                that operate on them, is the foundation for our future study data
+                structures.
+                </p>
+                <p>
+                Programming languages provide several facilities for definiing and
+                working with new types. We lave already learned about two that are
+                available in the C languge: arrays and pointers. In this module, we
+                will learn about three other mechanisms for defining types, and see how
+                they are supported by the C programming language. We will also begin
+                to look at how to use these facilities to model real-world data.
+                </p>
+
+
+            </div>
+
+            <div id="ttab-3" class="t_div objectives">
+
+                <ol>
+                    <li>Understand the basic concept of a data type.</li>
+                    <li>Identify the two components of a data type: data structures and
+                    functions that operate on them</li>
+                    <li>Explain the five basic mechanisms provided by most programming
+                    languages for definiing new data types </li>
+                    <li>Gain a detailed understanding of the C language <em>typedef</em>.</li>
+                    <li>Explain how use of the builtin typedefs for C numeric types,
+                    such as <em>unint8</em>, <em>int64</em>, and <em>size_t</em> promote
+                    portabiity across processors and operating systems.</li>
+                    <li>Give examples of how to use <em>typedef</em> to create useful
+                    application-specific types, such as Color for an image application</li>.
+                    <li>Describe the C language <em>enum</em> feature and how enumeration
+                    types can be used in creating a new data type.</li>
+                    <li>Explain the use of the C language <em>struct</em> mechnnism for
+                    definiing heterogenous data types</li>
+                    <li>Show how composites of <em>typedef</em>, <em>enum</em> and
+                    <em>struct</em> can be used to model more complex data to solve
+                    real-world problems.</li>
+                </ol>
+
+            </div>
+        </div>
+
+        <div id="bottom_tabs">
+            <ul>
+                <li><a href="#btab-1">Lecture 8</a></li>
+                <li><a href="#btab-4">Assignment 5</a></li>
+                <li><a href="#btab-2">Lecture 9</a></li>
+                <li><a href="#btab-3">Lecture 10</a></li>
+                <li><a href="#btab-5">Assignment 6</a></li>
+                <li><a href="#btab-6">Exercises</a></li>
+
+            </ul>
+            <hr class="tabs_hr"/>
+            <div id="btab-1" class="t_div readings" >
+                <h3>Introduction to Types and Using Typedefs to Define New Types</h3>
+				<p>
+                In this lesson, we will look at the concept of data types, and the ways that
+                data types can be defined in the C programming language. We will discover
+                that there are five common ways to create new data types: references, sequences,
+                aliases, enumerations, and aggregations.
+                </p>
+                <p>
+                We have already studied two of these.
+                A <em>pointer</em> indirectly refers to a value
+                through the address of the value that is stored in a pointer variable.
+                An <em>array</em> is an indexable homogeneous sequence of a basic data
+                type such as boolean, int, float, and char, or a pointer to one of those types.
+                </p>
+                <p>
+                In this lesson, we will learn about <em>typedef</em>, a way to provide
+                programmer-defined names to existing basic types, and to
+                composites of existing types. As we will see, being able to name new and existing
+                types offers several benefits, including program portability on different
+                processors and operating systems, and definitions that are more meaningful
+                in terms application-specific concepts like Color. This greatly improves the
+                readability of code and facitates the ability to matain and add new functionality
+                over time.
+                </p>
+                <h3>Readings</h3>
+                  <h4>Class presentation</h4>
+            	  <ul class="readling_list">
+                    <li>
+                    <a target="_blank" class="hlink" href=
+                    "resources/Lecture_8_Notes.pdf">Lecture 8 presentation</a>
+                    </li>
+                  </ul>
+                  <h4>C Tutorial readings</h4>
+                  <ul>
+                    <li>
+                    <a target="_blank" class="hlink" href=
+                    "https://www.tutorialspoint.com/cprogramming/c_typedef.htm">Typedefs</a> (from TutorialsPoint)
+                    </li>
+                    <li>
+                    <a target="_blank" class="hlink" href="https://www.tutorialspoint.com/cprogramming/c_bitwise_operators.htm">Bitwise Operators in C</a> (from TutorialsPoint)
+                  </ul>
+            </div>
+
+            <div id="btab-2" class="t_div readings" >
+                <h3>Using Enums to Define New Types </h3>
+				<p>
+                The second of the three new mechanisms for defining types is the enumeration.
+                An enumeration defines a type in terms of a set of symbolic constants that
+                repesent the values of the type. For example, days of the week can be defined
+                in terms of their day number, but it is clearer to provide symbolic constants
+                that name the days, and to use those constants rather than their numeric day
+                numbers.
+                </p>
+                <p>
+                In this lecture, we will look at the use of the C language <em>enum</em> to
+                define enumerated types, including how to define an <em>enum</em>, how to
+                specify symbolic constants, how to print their values, and how to make
+                use of them as parameters, switches, and loop and array indexes. We will also
+                learn about some of the limitations and restrictions on <em>enum</em> values
+                in C, and why it is almost always beneficial to <em>typedef</em> an <em>enum</em>.
+                </p>
+                <h3>Readings</h3>
+                  <h4>Class presentation</h4>
+            	  <ul class="readling_list">
+                    <li>
+                    <a target="_blank" class="hlink" href=
+                    "resources/Lecture_9_Notes.pdf">Lecture 9 presentation</a>
+                    </li>
+                  </ul>
+                  <h4>C Tutorial readings</h4>
+                  <ul>
+                    <li>
+                    <a target="_blank" class="hlink" href=
+                    "https://en.wikipedia.org/wiki/Enumerated_type">Enumerated Types</a> (from Wikipedia)
+                    </li>
+                    <li>
+                    <a target="_blank" class="hlink" href=
+                    "http://www.c4learn.com/c-programming/c-enum/">Enumerated Types</a> (from C4Learn.com)
+                    </li>
+                    <li>
+                    <a target="_blank" class="hlink", href=
+                    "http://en.cppreference.com/w/c/language/enum">Enumerations</a>
+                    (from CppReference.com)
+                  </ul>
+            </div>
+
+            <div id="btab-3" class="t_div readings" >
+                <h3>Using Structs to Define New Types</h3>
+				<p>
+                The third and final mechanism allows creating new types as heterogenous
+                collections of existing types. A <em>struct</em> consists of a set of named
+                fields. Each field is specified by an identifier with a name and a type.
+                A <em>struct</em> can be used to represent information about a real-world object
+                in an application, such as a book with an author, title, publisher, and
+                publication date in a library management system.
+                </p>
+                <p>
+                In this lecture, we will learn how to define a <em>struct</em>, how to
+                define and name its fields, how to initialize structs, and how to get and
+                set individual fields. We will also see how to create more complex data types
+                by embedding struct, enum, and typedef type fields within a struct. Finally,
+                we will learn why it is almost always beneficial to <em>typedef</em>
+                a <em>struct</em>.
+                </p>
+
+                <h3>Readings</h3>
+                  <h4>Class presentation</h4>
+            	  <ul class="readling_list">
+                    <li>
+                    <a target="_blank" class="hlink" href=
+                    "resources/Lecture_10_Notes.pdf">Lecture 10 presentation</a>
+                    </li>
+                  </ul>
+                  <h4>Tutorial readings</h4>
+                  <ul>
+                    <li>
+                    <a target="_blank" class="hlink" href=
+                    "https://www.tutorialspoint.com/cprogramming/c_structures.htm">Structures</a> (from TutorialsPoint)
+                    </li>
+                  </ul>
+            </div>
+
+            <div id="btab-4" class="t_div assignment" >
+                <ul class="assign_info">
+                    <li>
+                    DUE DATE: <span class="due_date">Fri, 29 Sept before 11:59:59pm</span><br/>
+                    </li>
+                </ul>
+			<p>
+            A zoo is a collection of animals. We can represent
+            animals using an enum <strong>Animal</strong>
+            whose identifiers are the
+            animal names.  For this assignment, our zoo has the
+            following kinds of animal in its collection: </p>
+            <ul>
+            <li>anteater</li>
+            <li>bear</li>
+            <li>cheetah</li>
+            <li>elephant</li>
+            <li>giraffe</li>
+            <li>lion</li>
+            <li>monkey</li>
+            <li>rhinoceros</li>
+            <li>tiger</li>
+            <li>zebra</li>
+            </ul>
+			<p>
+            We can represent a Zoo as a typedef for an array
+            of <strong>Animal</strong> whose
+            elements count the number of each
+            <strong>Animal</strong> in its
+            collection. The value of each
+            <strong>Animal</strong> can be used
+            as an index into the
+            <strong>Zoo</strong> array. </p>
+			<p>Write a C program &quot;zoo.c&quot; that
+            creates and manages a zoo.</p>
+            <ol>
+            <li>
+            Create an <strong>Animal</strong> enum for the
+            animals listed above in that order, and add
+            <em>Animal_kinds</em> at the end of the enum as
+            the number of kinds of <strong>Animal</strong>s.
+            </li>
+            <li>
+            Create a <strong>Zoo</strong> typedef as an array
+            of <strong>unsigned
+            int</strong> representing the counts for each
+             kind of <strong>Animal</strong> in the
+            <strong>Zoo</strong>'s collection.
+            </li>
+            <li>
+            Write a function
+            <em>void makeZoo(<strong>Zoo</strong> aZoo)</em>
+            that initializes the Zoo to have no
+            <strong>Animal</strong>s in its collection.
+            </li>
+            <li>
+            Write a function <em><strong>unsigned int</strong>
+            addAnimal(<strong>Zoo</strong> aZoo,
+            <strong>Animal</strong> anAnimal)</em> that
+            adds an <strong>Animal</strong> to the
+            <strong>Zoo</strong> and returns the current
+            count for that <strong>Animal</strong>.
+            </li>
+            <li>
+            Write a function
+            <em><strong>const char*</strong>
+            getAnimalName(<strong>Animal</strong> anAnimal)</em>
+            that returns the name of the
+            <strong>Animal</strong>. Declare a
+            local array <em>static const
+            <strong>char *</strong>animalNames[]</em>,
+            initialized with the
+            literal strings for the <strong>Animal</strong>
+            names using the <strong>Animal</strong>
+            enumeration value
+            as an index into the <em>animalNames</em>
+            array. The function can return the string
+            because the <em>animalNames</em> is a static
+            array of literal strings.
+            </li>
+            <li>
+            Write a function
+            <em><strong>void</strong>
+            printZoo(const <strong>Zoo</strong> aZoo)</em>
+            that prints an inventory of the animals in the
+            <strong>Zoo</strong>. The output is one animal
+            per line with the
+            count in a blank-padded field of 3 digits (%3u),
+            followed by a tab character ('\t') followed by
+            the name of the animal.The function uses
+            <em>getAnimalNames()</em> to get the
+            <strong>Animal</strong> names.
+            </li>
+            <li>
+            Write a
+            <em><strong>int</strong>
+            main(<strong>void</strong>)</em>
+            function that creates a <strong>Zoo</strong>
+            and calls <em>makeZoo()</em> to initialize it.
+            Then it calls <em>addAnimal()</em> to add a number
+            of each <strong>Animal</strong> to the
+            <strong>Zoo</strong> corresponding to the
+            enumeration value of the <strong>Animal</strong>.
+            For each <strong>Animal</strong> added, it prints
+            the <strong>Animal</strong> name and the new count
+            using this format:
+            "Added %s count: %u\n" Finally it uses
+            <em>printZoo()</em> to print animals in the
+            <strong>Zoo</strong> and their counts.
+            </li>
+            </ol>
+
+
+            </p>
+            </div>
+
+            <div id="btab-5" class="t_div assignment" >
+                <ul class="assign_info">
+                    <li>
+                    DUE DATE: <span class="due_date">Wed, 3 Oct before 11:59:59pm</span><br/>
+                    </li>
+                </ul>
+
+                <p>
+                This problem is similar to the example shown on slides 21-24 of Lecture 3. Write a program "assignment-6.c" that creates and manages geometric shapes.
+                </p>
+                <ol>
+                <li>
+                Define and typedef a struct <strong>Point</strong> that contains two double variables
+                <em>x</em> and <em>y</em>. An instance of <em>Point</em> represents a point in
+                Cartsian space.
+                </li>
+                <li>
+                Define and typedef a struct <strong>Circle</strong> that contains
+                a double variable <em>radius</em> and a <em>Point</em> variable <em>center</em>.
+                </li>
+                <li>
+                Define and typedef a struct <strong>Rectangle</strong> that contains
+                a <strong>Point</strong> variable <em>origin</em> that is the top left corner of
+                the rectangle, and two double variables <em>width</em> and
+                <em>height</em>.
+                </li>
+                <li>
+                Create a function <em>distanceofPoints()</em> that takes const pointers to two
+                <strong>Point</strong> structs, and computes the distance between them. The distance between
+                two points is the square root of the square of the x distances plus the square
+                of the y distances for the two points. The function returns a double. </li>
+                <li>
+                Create a function <em>intersectsCircles()</em> that takes const pointers to two
+                <strong>Circle</strong> structs <em>circle1</em> and <em>circle2</em>and returns true
+                if the two circles intersect and false otherwise. Two circles
+                intersect if the distance between their centers is less than the sum
+                of the two radii (if they are equal, the two circles touch but do not
+                intersect. </li>
+                <li>
+                Create a function <em>getBoundingBox()</em> that takes a const pointer to a in input
+                parameter <strong>Circle</strong>, <em>circle</em> and a pointer to a <strong>Rectangle</strong>
+                result parameter <em>boundingBox</em>. The function sets the fields of
+                <strong>Rectangle</strong> to the bounding box that encloses the circle. The function
+                returns the <strong>Rectangle</strong> result parameter pointer.
+                </li>
+                <li>
+                Create a main program that tests the
+                <em>intersectsCircles()</em> function using the following cases:
+                <ul>
+                <li>
+                circle1 at 0,0 radius 10, and circle2 at 21,0, radius 10: do not intersect
+                </li>
+                <li>
+                circle1 at 0,0 radius 10, and circle3 at 20, 0, radius 10: do not intersect
+                </li>
+                <li></li>
+                circle1 at 0,0 radius 10, and circle4 at 19,0, radius 10: intersect
+                </ul>
+                </li>
+                <li>
+                Also in the main program, test the <em>getBoundingBox()</em> function by
+                declaring an uninitialized <em>Rectangle</em> <em>boundingBox</em> and
+                calling the <em>getBoundingBox()</em> function for <em>circle1</em>,
+                <em>circle2</em>, <em>circle3</em>, and <em>circle4</em>. Print the origin,
+                width, and height of the <em>boundingBox</em> for each circle.
+                </li>
+                </ol>
+            </div>
+            <div id="btab-6" class="t_div assignment" >
+            	<h3>Additional Exercises</h3>
+                <p>Here are additional exercises that will give you more practice with the subject material in this module.</p>
+                <ol>
+                <li>
+                Create a function <em>print2DByRows()</em> that takes two int parameters
+                <em>rows</em> and <em>cols</em> and a 2D array of double values. Print the
+                values of the array in row-major order, one row per line, with the values
+                on each line separated by ',' characters.
+                </li>
+                <li>
+                Create a function <em>print2DByCols()</em> that takes two int parameters
+                <em>rows</em> and <em>cols</em> and a 2D array of double values. Print the
+                values of the array in column-major order, one column per line, with the values
+                on each line separated by ',' characters.
+                </li>
+
+                <p>The previous two problems would be similar to a final exam question</p>
+
+                <li>
+                Create a function <em>printByRows()</em> that takes two int parameters
+                <em>rows</em> and <em>cols</em> and a pointer to an array of double values
+                that represent a 2D array in row major order. Print the
+                values of the array in row-major order, one row per line, with the values
+                on each line separated by ',' characters.
+                </li>
+                <li>
+                Create a function <em>printByCols()</em> that takes two int parameters
+                <em>rows</em> and <em>cols</em> and a pointer to an array of double values
+                that representa 2D array in row major order. Print the
+                values of the array in column-major order, one column per line, with the values
+                on each line separated by ',' characters.
+                </li>
+
+                <p>The previous two problems would be similar to a final exam question</p>
+
+                <li>
+                Create an enum type <em>MonthOfYear</em> that defines the months of the year,
+                with Jan = 1. Create a function <em>getMonthName()</em> that takes a
+                <em>MonthOfYear</em> and returns a pointer to a const char* that represents
+                the month name. Note: it is permissable to return a pointer to a literal string
+                from a function because literal strings are not stored locally in the function.
+                </li>
+
+                <p>The previous problem, together with the inverse function
+                <em>getMonthOfYear()</em>, would be similar to a final exam question.
+                The <em>getMonthOfYear()</em> function takes a month name string and returns
+                the enum value or 0 if no match.</p>
+
+                <li>
+                Create an enum type <em>FuzzyBool</em> that defines three values:
+                <em>YES</em>, <em>NO</em>, and <em>MAYBE</em>.
+                </li>
+                <li>
+                Create a function. <em>fuzzyOR()</em> that takes two <em>FuzzyBool</em> values
+                and returns <em>YES</em> if either value is <em>YES</em>, <em>NO</em> if both
+                values are <em>NO</em> and <em>MAYBE</em> otherwise.
+                </li>
+                <li>
+                Create a function <em>fuzzyAND()</em> that takes two <em>FuzzyBool</em> values
+                and returns <em>YES</em> if both values are <em>YES</em>, <em>NO</em> if
+                either value is <em>NO</em> and <em>MAYBE</em> otherwise.
+                </li>
+
+                <p>The previous three problems together with <em>fuzzyNOT()</em>
+                would be similar to a final exam question. The <em>fuzzyNOT()</em>
+                function returns <em>YES</em> if input is <em>NO</em>, <em>NO</em>
+                if input is <em>YES</em>, and <em>MAYBE</em> otherwise </p>
+
+
+                </ol>
+
+            </div>
+
+
+        </div>
+
+    </div> <!-- END Tab Container -->
+
+</section>
+
+
+</body>
+
+</html>

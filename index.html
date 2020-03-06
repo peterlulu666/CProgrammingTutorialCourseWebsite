@@ -1,0 +1,306 @@
+<!--
+*
+* © 2015 Northeastern University
+* College of Computer and Information Science (CCIS)
+*
+*
+-->
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- styles -->
+
+<link rel="stylesheet" href="css/jquery-ui.min.css">
+<link rel="stylesheet" href="css/main_styles.css">
+
+<!-- scripts -->
+
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/URL_Map.js"></script>
+<script src="js/window_hook.js"></script>
+
+
+<title>Computer Science: C Programming Tutorial</title>
+
+<script>
+    $(function() {
+            $( "#top_tabs" ).tabs();
+
+            });
+
+    $(function() {
+            $( "#bottom_tabs" ).tabs();
+
+            });
+</script>
+
+</head>
+
+<body>
+
+    <div id="banner">
+        <img id="banner_img" src="">
+        <span id="course_title"><span id="course_num">Computer Science:</span> C Programming Tutorial</span>
+        <div class="clear_shim"></div>
+    </div>
+
+
+    <section id="main_container">
+
+        <div id="left_nav">
+            <ul>
+                <a href="index.html" class="active_pg"><li>HOME</li></a>
+                <a href="syllabus.html"><li>SYLLABUS</li></a>
+                <a href="schedule.html"><li>SCHEDULE</li></a>
+                <li>MODULES</li>
+                <li> <ul>
+                    <a href="module0.html"><li>0</li></a>
+                    <a href="module1.html"><li>1</li></a>
+                    <a href="module2.html"><li>2</li></a>
+                    <a href="module3.html"><li>3</li></a>
+                    <a href="module4.html"><li>4</li></a>
+                    <a href="module5.html"><li>5</li></a>
+                    <a href="module6.html"><li>6</li></a>
+                </ul>
+                </li>
+                <a href="http://piazza.com/ccs.neu.edu/fall2018/cs5001/home" target="_blank"><li>PIAZZA</li></a>
+            </ul>
+
+        </div>
+
+
+        <div id="tab_container"> <!-- Tab Container -->
+
+            <div id="top_tabs">
+                <ul>
+                    <li><a href="#ttab-1">Course Overview</a></li>
+                    <!--<li><a href="#ttab-ack">Acknowledgement</a></li>-->
+                    <!--<li><a href="#ttab-2">Course Map</a></li>-->
+                    <!--<li><a href="#ttab-3">Objectives</a></li>-->
+                </ul>
+                <hr class="tabs_hr">
+                <div id="ttab-1" class="t_div module_overview">
+
+                    <h2 class="subsection_header">Course Description</h2>
+                    <p>
+                    This course is an introduction to computing and programming.
+                    One goal is to introduce you to the basic concepts of
+                    computation and the principles of problem solving through
+                    programming. The other goal is to ensure that you have the
+                    necessary knowlege and skills that are required by subsequent
+                    ALIGN courses.
+                    </p>
+
+                    <p>
+                    The course does not assume prior programming experience.
+                    All of the concepts and techniques will be presented in class,
+                    supplemented by assigned readings, and through hands-on
+                    programming assignments. For those with a little prior
+                    programming experience, some of this material will be a
+                    reivew, but this course will give you a more systematic view of
+                    programming, and provide an opportunity to hone your skills.
+                    </p>
+
+                    <p>
+                    You will also learn to use professional tools for
+                    developing, debugging, documenting, testing, and archiving the
+                    programs you create. These tools are the same ones that you
+                    will use throughout your academic program, and that employers
+                    expect you to know how to use. Learning them well is a good
+                    investment in your career.
+                    </p>
+
+                    <h2 class="subsection_header">Prerequisites</h2>
+
+                    <p>
+                    The course assumes a basic facility with arithmetic, algebra, and
+                    a logical approach to problem solving. The course concentrates
+                    a lot of leaning into a very short time period. It requires
+                    curiosity, self-discipline, and persistence on your part to master
+                    the material.</p>
+                    <p>
+                    It also requires some amount of people skills because all computer
+                    scientists end up working with others. You will benefit by finding
+                    others to study with and discuss ideas and concepts presented in
+                    this course. Although you are required to do your own work on
+                    programming assignments and exams, it is fair to ask others for help
+                    spotting a problem in code that is not working correctly, and to
+                    offer the same help in return.
+                    </p>
+
+                    <h2 class="subsection_header">Other Requirements</h2>
+                    <p>
+                    You will need a fairly recent model portable computer with
+                    sufficient memory (8GB-16GB) and wireless network access. You will
+                    do your work on this computer, and bring it to all class sessons
+                    and exams. The development tools run on MS Windows 7/8/10, MacOS
+                    10.12, and most Linux distributions. You will also need a
+                    basic facility in the use of the computer, including its basic
+                    tools, and windowing system.
+                    </p>
+                </div>
+
+                <!--  <a href="" onclick="appendWin(windowHook('chap_31', q_arr=['q2', 'q1_a']));">Test Link: External</a> -->
+                <!-- <a href="" onclick="appendWin(windowHook('chap_31', q_arr.push('q2'), q_arr.push('q1_b'))); ">Test Link: External</a> -->
+                <!--<a href="" onclick="appendWin(windowHook('chap_31', q_arr[0]='q2', q_arr[1]='q1_a')); ">Test Link: External</a> -->
+<!--
+               	<div id="ttab-ack" class="t_div module_overview">
+                    <h2 class="subsection_header">Acknowledgement</h2>
+                    <p>Therapon (Theo) Skoteiniotis, who taught this class at the Seattle
+                    campus, generously shared his version of the course website, including
+                    his problem sets and lecture notes, for use by this first class at the
+                    Silicon Valley campus. His support in preparing for this class is very
+                    gratefuly acknowledged.</p>
+				</div>
+-->
+                <!--<div id="ttab-2" class="t_div">-->
+                    <!--<img class="c_map" src="course_maps/ConceptMap_Mod7_805x550.png" />-->
+                <!--</div>-->
+
+                <!--<div id="ttab-3" class="t_div objectives">-->
+
+
+<!--
+                    <span class="section_header">Coding Style</span>-->
+                    <!--<ol>-->
+                        <!--<li>Use the syntactical conventions for function definitions.</li>-->
+                        <!--<li>Use the naming conventions for functions.</li>-->
+                        <!--<li>Use CamelCase for data definition names.</li> -->
+                        <!--<li>Append predicate function names with the question mark character.</li>-->
+                        <!--<li>Use all capitalization for constant names.</li>-->
+                        <!--<li>Use the arrow to separate input and output in function signatures.</li> -->
+                        <!--<li>Use a bulleted list for an itemization data definition.</li>-->
+                    <!--</ol>-->
+
+                    <!--<span class="section_header">Data Representation</span> -->
+                    <!--<ol>-->
+                        <!--<li>List the four questions used during the design of data definitions.</li>  -->
+                        <!--<li> Define the term compound.</li>-->
+                        <!--<li>Define the term itemization.</li>-->
+                        <!--<li>Define the term mixed data.</li>-->
+                        <!--<li>Write a code example of scalar data.</li>-->
+                        <!--<li>Write a code example of compound data.</li>-->
+                        <!--<li>Write a code example of mixed data.</li>-->
+                        <!--<li>Write the interpretation for simple data.</li>-->
+                        <!--<li>Explain what define-struct does.</li>-->
+                        <!--<li>Write a constructor template.</li>-->
+                        <!--<li>Explain what is a destructor template.</li>-->
+                        <!--<li>Given a set of data definitions, write down their destructor templates.</li> -->
+                        <!--<li>Given a specification for information represented as a list, write a data definition that maps the information into a Scheme list.</li> -->
+                        <!--<li>Explain how lists are represented as cons-cells.</li> -->
+                        <!--<li>Explain what first, rest, and cons do to lists.</li>   -->
+                        <!--<li>Given a specification for information represented as a tree, write a data definition that maps the information into Scheme data.</li> -->
+                        <!--<li>Recognize information that is represented as alternating lists.</li> -->
+                        <!--<li>Given a specification for information represented as alternating lists, write a data definition that maps the information into Scheme data.</li> -->
+
+                    <!--</ol>-->
+
+                    <!--<span class="section_header">Design Programs</span>-->
+                    <!--<ol>-->
+                        <!--<li>Given a function, write a contract.</li>-->
+                        <!--<li>Given a function, write a purpose statement.</li> -->
+                        <!--<li>Given a function, write the appropriate example.</li> -->
+                        <!--<li>Given a Scheme function, identify the strategy used.</li> -->
+                        <!--<li>Write a new function by composing existing functions.</li> -->
+                        <!--<li>Explain structural decomposition.</li> -->
+                        <!--<li>Use structural decomposition by writing a function that takes itemized, compound, or mixed data as input.</li>-->
+                        <!--<li>Given a data definition for a list, write a template.</li> -->
+                        <!--<li>Use structural decomposition by writing a function that takes a list as input.</li>-->
+                        <!--<li>Write templates for a lists of compound data.</li>-->
+                        <!--<li>Given a data definition of a list of compound data, write a template.</li>-->
+                        <!--<li>Use templates by writing a function that takes lists of compound data input.</li>-->
+                        <!--<li>Given a set of Scheme functions that contain duplicative code, write the abstracted function.</li>-->
+                        <!--<li>Recognize patterns for built-in abstract functions.</li>-->
+                        <!--<li>Write the contracts for the built-in abstract functions.</li>-->
+                        <!--<li>Given abstract functions, use Higher Order Function Composition to define a new function.</li>  -->
+                        <!--<li>Given a function that uses structural decomposition, convert it into a function that uses Higher Order Function Composition.</li>-->
+                        <!--<li>Given a data definition for tree structured data, write a template.</li> -->
+                        <!--<li>Given a recursive data definition, write a fold function.</li> -->
+                        <!--<li>Given a function that uses mutual recursion, convert it to use accumulators.</li> -->
+                        <!--<li>Document accumulator arguments by writing an invariant.</li>  -->
+                        <!--<li>Explain the difference between structural and general recursion.</li> -->
+                        <!--<li>Identify algorithms that cannot be solved using structural recursion.</li> -->
+                        <!--<li>Summarize the purpose of a termination argument.</li>-->
+                        <!--<li>Summarize the purpose of a halting measure.</li>-->
+                        <!--<li>Write a program that uses the build-in function big-bang to create an animation.</li>  -->
+                    <!--</ol>-->
+
+                    <!--<span class="section_header">Design Recipe</span>-->
+                    <!--<ol>-->
+                        <!--<li>List the six steps of the design recipe in order.</li>-->
+                        <!--<li>Explain what each step of the Design Recipe does.</li> -->
+                        <!--<li>List the three parts that make up a data definition.</li> -->
+                        <!--<li>Given a solution, label each step of the design recipe.</li>-->
+                        <!--<li>Given a signature, write down its inputs</li>-->
+                        <!--<li>Given a signature, write down its outputs.</li>-->
+                        <!--<li>Given a signature that takes other functions as arguments, write down valid inputs for the signature.</li> -->
+                    <!--</ol>-->
+
+                    <!--<span class="section_header">Testing</span> -->
+                    <!--<ol>-->
+                        <!--<li>List the four goals of testing.</li> -->
+                        <!--<li>Explain the four goals of testing.</li>-->
+                        <!--<li>Use rackunit to write tests.</li> -->
+                        <!--<li>Use rackunit to debug a function.</li>-->
+                    <!--</ol>-->
+
+                    <!--<span class="section_header">Syntax</span>-->
+                    <!--<ol>-->
+                        <!--<li>Write a constant definition using the keyword define.</li>  -->
+                        <!--<li>Write a function definition using the keyword define.</li> -->
+                        <!--<li>Write a call to a function with the appropriate number of inputs.</li> -->
+                        <!--<li>Write a conditional statement using the keyword cond.</li> -->
+                        <!--<li>Write a function definition that is local in scope to another function.</li> -->
+                        <!--<li>Write an anonymous function using the keyword lambda.</li> -->
+                        <!--<li>Write a call to an anonymous function with the appropriate number of inputs.</li> -->
+                        <!--<li>Write code that uses a structure definition to create a new value.</li> -->
+                    <!--</ol>-->
+
+
+                    <!--<span class="section_header">Computation</span>-->
+                    <!--<ol>-->
+                        <!--<li>Explain what is meant by computation.</li> -->
+                        <!--<li>Write an example of a computation.</li> -->
+                        <!--<li>Explain the difference between program and computation.</li> -->
+                        <!--<li>List the four properties that define a value.</li>-->
+                        <!--<li>Given a sequence of instructions, transcribe them into a Scheme program.</li> -->
+                        <!--<li>Name the four steps that make up a computation.</li> -->
+                        <!--<li>Given a Scheme expression, write down the sequence of steps taken during evaluation.</li> -->
+                        <!--<li>Explain the role representation.</li>-->
+                        <!--<li>Explain the role of interpretation.</li>  -->
+                        <!--<li>Explain the relationship between information and data.</li> -->
+                    <!--</ol>-->
+
+                    <!--<span class="section_header">Object Oriented</span>-->
+                    <!--<ol>-->
+                        <!--<li>Given a DrRacket structure, write the corresponding Java classes.</li> -->
+                        <!--<li>Translate the auto-generated functions for a structrure in DrRacket to Java methods.</li> -->
+                        <!--<li>Translate contracts to Java method signatures.</li> -->
+                        <!--<li>Translate purpose statements to Javadoc.</li> -->
+                        <!--<li>Given an itemization data definition, translate it to Java classes.</li> -->
+                        <!--<li>Explain inheritance and subtypes for the enumeration examples.</li> -->
+                        <!--<li>Given the data definition of a list, translate it to Java classes.</li> -->
+                        <!--<li>Given a template for a function that consumes a list in Racket, translate it into Java methods.</li> -->
+                    <!--</ol>-->
+
+                </div>
+
+            </div>
+
+
+    </section>
+
+
+</body>
+
+
+</html>

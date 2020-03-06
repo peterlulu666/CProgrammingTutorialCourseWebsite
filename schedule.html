@@ -1,0 +1,574 @@
+
+<!--
+*
+* © 2017 Northeastern University
+* College of Computer and Information Science (CCIS)
+*
+*
+-->
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<meta NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- styles -->
+
+<link rel="stylesheet" href="css/jquery-ui.min.css">
+<link rel="stylesheet" href="css/main_styles.css">
+
+<!-- source code highlighting using Prism -->
+<link href="css/prism.css" rel="stylesheet" />
+
+
+<!-- scripts -->
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+
+
+<title>Computer Science: C Programming Tutorial</title>
+
+<script>
+$(function() {
+        $( "#top_tabs" ).tabs();
+
+        });
+
+$(function() {
+        $( "#bottom_tabs" ).tabs();
+
+        });
+
+
+</script>
+
+<style>
+//table .module {
+//  background-color: #f0f0f0;
+//}
+
+.schedule .module_header {
+    background-color:#bee0f3;  /* rgba(75, 151, 198, 0.3); */
+}
+.schedule .alt2 {
+    background-color:#f9ffff;  /* rgba(229, 243, 250, 0.3); */
+}
+
+.schedule .alt_nc {
+    background-color: rgba(198,91,91,0.3);  /* rgba(198, 91, 91, 0.3); */
+}
+
+</style>
+
+</head>
+
+<body>
+<!-- source code highlighting using Prism -->
+<script src="js/prism.js"></script>
+<script>
+
+</script>
+
+    <div id="banner">
+        <img id="banner_img" src="">
+        <span id="course_title"><span id="course_num">Computer Science:</span> C Programming Tutorial</span>
+        <div class="clear_shim"></div>
+    </div>
+
+
+<section id="main_container">
+
+    <div id="left_nav">
+        <ul>
+            <a href="index.html"><li>HOME</li></a>
+            <a href="syllabus.html"><li>SYLLABUS</li></a>
+<!--
+            <a href="codewalks.html"><li>CODEWALKS</li></a>
+-->
+            <a href="schedule.html" class="active_pg"><li>SCHEDULE</li></a>
+            <li>MODULES</li>
+            <li> <ul>
+                <a href="module0.html"><li>0</li></a>
+                <a href="module1.html"><li>1</li></a>
+                <a href="module2.html"><li>2</li></a>
+                <a href="module3.html"><li>3</li></a>
+                <a href="module4.html"><li>4</li></a>
+                <a href="module5.html"><li>5</li></a>
+                <a href="module6.html"><li>6</li></a>
+            </ul>
+            </li>
+            <a href="http://piazza.com/ccs.neu.edu/fall2018/cs5001/home" target="_blank"><li>PIAZZA</li></a>
+        </ul>
+
+    </div>
+
+
+<div class="syllabus_main"> <!-- Tab Container -->
+
+    <table class="schedule">
+        <thead class="schedule_head">
+            <tr class="subsection_header">
+                <th>
+                	Lecture
+                </th>
+                <th>
+                   	Date
+                </th>
+                <th>
+                    Reading
+                </th>
+                <th>
+                    Assignment
+                </th>
+                <th>
+                    Topics Covered</th>
+            </tr>
+        </thead>
+
+        <tbody class="schedule_body">
+			 <tr class="date module_header">
+               <td colspan="5" class="subsection_header">
+                <a class="hlink" href="module0.html">Module 0</a> :
+                Computers, Programs, and Programming Languages
+               </td>
+             </tr>
+
+             <tr class="alt2">
+                <td>
+                    1
+                </td>
+                <td>
+                    Sept 5
+				</td>
+                <td>
+                    <a class="hlink" href="module0.html#btab-4">
+                    Lecture slides</a>
+			    </td>
+                <td>
+                  <!-- no assignment -->
+                </td>
+                <td>
+               	 Installation, setup, and verification of Eclipse development environment;
+                 introduction to computers, programs, and programming languages.
+                </td>
+             </tr>
+
+			 <tr class="date">
+               <td colspan="5" class="subsection_header">
+               <a class="hlink" href="module1.html">Module 1</a> : Basic Building Blocks
+               </td>
+             </tr>
+
+             <tr class="alt">
+                <td>
+                    2
+                </td>
+                <td>
+                  Sept 10
+                </td>
+                <td>
+                    <a class="hlink" href="module1.html#btab-1">
+                    Lecture slides, introductory sections on C from the course text</a>
+                </td>
+                <td>
+                    <a class="hlink" href="module2.html#btab-4"> 1</a>
+                </td>
+                <td>
+                    Creating programs that includes data using basic C numeric, logical
+                    and character types, and instructions in the form of statements and
+                    expressions that operate on data and produce results that solve a problem.
+					</p>
+                </td>
+            </tr>
+
+             <tr class="alt2">
+                <td>
+                    3
+                </td>
+                <td>
+                  Sept 11
+                </td>
+                <td>
+                    <a class="hlink" href="module1.html#btab-2">
+                    Lecture slides, section on functions from the course text</a>
+                </td>
+                <td>
+                  <!-- no programming assignment -->
+                </td>
+                <td>
+                    Defining and calling C functions; documenting code; debugging function calls.
+                </td>
+            </tr>
+
+
+             <tr class="alt">
+                <td>
+                    4
+                </td>
+                <td>
+                  Sept 12
+                </td>
+                <td>
+                    <a class="hlink" href="module1.html#btab-3">
+                    Lecture slides, section on decision making and repetition from the course text</a>
+                </td>
+                <td>
+                    <a class="hlink" href="module2.html#btab-5">2</a>
+                </td>
+                <td>
+                    Using boolean expressions to implement conditional processing and repetition.
+                </td>
+            </tr>
+
+			 <tr class="date module_header">
+               <td colspan="5" class="subsection_header">
+               <a class="hlink" href="module2.html">Module 2</a> :
+               Arrays, Strings, and Pointers
+               </td>
+             </tr>
+
+             <tr class="alt2">
+                <td>
+                    5
+                </td>
+                <td>
+                  Sept 17
+                </td>
+                <td>
+                    <a class="hlink" href="module2.html#btab-1">
+                    Lecture slides, readings on arrays and strings from the course text</a>
+                </td>
+                <td>
+                    <a class="hlink" href="module2.html#btab-4">3</a>
+                </td>
+                <td>
+                    Using arrays to create indexable collections; single and mult-dimensional
+                    arrays; using arrays of characters to represent string values; operations
+                    on strings.
+                </td>
+            </tr>
+
+             <tr class="alt">
+                <td>
+                    6
+                </td>
+                <td>
+                  Sept 18
+                </td>
+                <td>
+                    <a class="hlink" href="module2.html#btab-2">
+                    Lecture slides, section on pointers from the course text</a>
+                </td>
+                <td>
+                  <!-- no programming assignment -->
+                </td>
+                <td>
+                    Introduction to pointer types; pointers to variables,
+                    passing values to functions using pointers;
+                    using pointers to extract values from formatted strings.
+                </td>
+            </tr>
+
+             <tr class="alt2">
+                <td>
+                    7
+                </td>
+                <td>
+                  Sept 19
+                </td>
+                <td>
+                    <a class="hlink" href="module2.html#btab-3">
+                    Lecture slides, section on pointers from the course text</a>
+                </td>
+                <td>
+                    <a class="hlink" href="module2.html#btab-5">4</a>
+                </td>
+                <td>
+                    Using pointers to access arrays and strings, pointer arithmetic, arrays of
+                    pointers, pointer representations of 2-dimensional and higher arrays.
+                </td>
+             </tr>
+
+			 <tr class="date module_header">
+               <td colspan="5" class="subsection_header">
+               <a class="hlink" href="module3.html">Module 3</a> :
+               Definining New Types
+               </td>
+             </tr>
+
+             <tr class="alt">
+                <td>
+                    8
+                </td>
+                <td>
+                  Sept 24
+                </td>
+                <td>
+                    <a class="hlink" href="module3.html#btab-1">
+                    Lecture slides, sections on enumerations, typedefs, structs, and unions
+                    from the course text</a>
+                </td>
+                <td>
+                    <a class="hlink" href="module3.html#btab-4">5</a>
+                </td>
+                <td>
+                    Using enumerations to create symbolic values, using typedef to
+                    create shortcuts for more complex types, defining composite
+                    structures with named fields; using unions create variant fields.
+                </td>
+            </tr>
+
+             <tr class="alt2">
+                <td>
+                9
+                </td>
+                <td>
+                  Sept 25
+                </td>
+                <td>
+                    <a class="hlink" href="module3.html#btab-2">
+                    Lecture slides, readings on memory memagement from the course text</a>
+                </td>
+                <td>
+                  <!-- no programming assignment -->
+                </td>
+                <td>
+                    Review of C program memory layout; allocating and freeing
+                    long-term memory from the C heap memory; using allocated memory as arrays;
+                    managing allocated memory.
+                </td>
+            </tr>
+
+             <tr class="alt">
+                <td>
+                    10
+                </td>
+                <td>
+                  Sept 26
+                </td>
+                <td>
+                    <a class="hlink" href="module3.html#btab-3">
+                    Lecture slides</a>
+                </td>
+                <td>
+                    <a class="hlink" href="module3.html#btab-5">6</a>
+                </td>
+                <td>
+                    Solving problems using structs, typedefs, and long-term memory.
+                </td>
+            </tr>
+
+			 <tr class="date module_header">
+               <td colspan="5" class="subsection_header">
+               <a class="hlink" href="module4.html">Module 4</a> :
+               Memory management, Modularization, and Unit Testing
+               </td>
+             </tr>
+
+             <tr class="alt2">
+                <td>
+                    11
+                </td>
+                <td>
+                  Oct1
+                </td>
+                <td>
+                    <a class="hlink" href="module4.html#btab-1">
+                    Lecture slides, readings on header files and storage classes from the course text</a>
+                </td>
+                <td>
+<!--
+                    <a class="hlink" href="module4.html#btab-4">7</a>
+-->
+                </td>
+                <td>
+                    Review of C program memory layout; allocating and freeing
+                    long-term memory from the C heap memory; using allocated memory as arrays;
+                    managing allocated memory.
+                </td>
+            </tr>
+
+             <tr class="alt">
+                <td>
+                    12
+                </td>
+                <td>
+                  Oct 2
+                </td>
+                <td>
+                <a class="hlink" href="module4.html#btab-2">
+                Lecture slides, readings on header files
+                and storage classes from the course text</a>                </td>
+                <td>
+                  <!-- no programming assignment -->
+                </td>
+                <td>
+                    Dividing programs among multiple files, extern storage classes; include files,
+                    building and debugging programs with multiple files.
+                </td>
+            </tr>
+
+             <tr class="alt2">
+                <td>
+                    13
+                </td>
+                <td>
+                  Oct 3
+                </td>
+                <td>
+                    <a class="hlink" href="module4.html#btab-3">
+                    Lecture slides, readings on unit testing.</a>
+                </td>
+                <td>
+                    <a class="hlink" href="module4.html#btab-5">7</a>
+                </td>
+                <td>
+                    Unit testing concepts; unit test framework; use of the CUnit
+                	libraries and unit test assertions; creating suites and test
+                    functions..
+                </td>
+            </tr>
+
+
+			 <tr class="date module_header">
+               <td colspan="5" class="subsection_header">
+               <a class="hlink" href="module5.html">Module 5</a> :
+               Processing Arguments, Putting it All Together.
+               </td>
+             </tr>
+             <tr class="alt">
+             	<td></td>
+                <td>Oct 8</td>
+                <td colspan="3">
+                   <strong>Columbus Day -- NEU Holiday <em>(no class)</em></strong>
+                </td>
+             </tr>
+
+<!--
+             <tr class="alt2">
+                <td>
+                    14
+                </td>
+                <td>
+                  Oct 9
+                </td>
+                <td>
+                    <a class="hlink" href="module5.html#btab-2">
+                    Lecture slides, Doxygen documentation</a>
+                </td>
+                <td>8</td>
+                <td>
+                    Installing Doxygen in Eclipse; configuring documentation generation options,
+                    generating external documenation; evaluating and improving internal
+                    documentation.
+                </td>
+            </tr>
+-->
+             <tr class="alt2">
+                <td>
+                    14
+                </td>
+                <td>
+                  Oct 9
+                </td>
+                <td>
+                    <a class="hlink" href="module5.html#btab-3">
+                    Lecture slides, section on variadic functions and program arguments from the course text</a>
+                </td>
+                <td>
+<!--
+                <a class="hlink" href="module5.html#btab-5">8</a>
+-->
+                </td>
+                <td>
+                    Functions using variadic functions that have a variable number of arguments; processing arguments passed to a program when it runs; using ad-hoc processing,
+                    and standard libraries with more advanced processing options.
+                </td>
+            </tr>
+
+<!--
+			 <tr class="date">
+               <td colspan="5" class="subsection_header">
+               <a class="hlink" href="module6.html">Module 6</a> :
+               Putting it All Together: Solving a Real World Problem
+               </td>
+             </tr>
+-->
+             <tr class="alt">
+                <td>
+                    15
+                </td>
+                <td>
+                  Oct 10
+                </td>
+                <td>
+                    <a class="hlink" href="module6.html#btab-1">
+                    Lecture slides</a>
+                </td>
+                <td>
+                  <!-- no programming assignment -->
+                </td>
+                <td>
+                    Example: a "chatbot" called "Eliza" using
+                    facilities and techniques presented in this course; includes a
+                    historical perspective on the original program from 1964-1966
+                </td>
+            </tr>
+
+			 <tr class="date module_header">
+               <td colspan="5" class="subsection_header">
+               <a class="hlink" href="module6.html">Module 6</a> :
+               Course Review and Final Exam
+               </td>
+             </tr>
+             <tr class="alt2">
+                <td>
+                  16
+                </td>
+                <td>Oct 15</td>
+                <td colspan="3">
+                    <strong>Course review</strong></td>
+             </tr>
+             <tr class="alt">
+                <td>
+<!--
+                  16
+-->
+                </td>
+                <td>Oct 16</td>
+                <td colspan="3">
+                    <strong>Independent study day</strong>
+(optional review session)             </td>
+             </tr>
+
+             <tr class="alt2">
+             	<td></td>
+                <td>Oct 17</td>
+                <td colspan="3">
+                    <strong>Final exam, 11am-5pm <em>(extended period)</em></strong>
+                </td>
+             </tr>
+	    </tbody>
+    </table>
+
+</div>
+</body>
+</html>
+
+
+</a></sup></a>
+
+</div> <!-- END Tab Container -->
+
+</section>
+
+
+</body>
+
+</html>

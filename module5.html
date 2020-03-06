@@ -1,0 +1,450 @@
+
+<!--
+*
+* © 2015 Northeastern University
+* College of Computer and Information Science (CCIS)
+*
+*
+-->
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- styles -->
+
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/main_styles.css">
+
+    <!-- source code highlighting using Prism -->
+    <link href="css/prism.css" rel="stylesheet" />
+
+
+    <!-- scripts -->
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+
+
+    <title>Computer Science: C Programming Tutorial</title>
+
+    <script>
+        $(function() {
+            $( "#top_tabs" ).tabs();
+
+        });
+
+        $(function() {
+            $( "#bottom_tabs" ).tabs();
+
+        });
+
+
+    </script>
+
+
+</head>
+
+<body>
+<!-- source code highlighting using Prism -->
+<script src="js/prism.js"></script>
+<script>
+
+</script>
+
+    <div id="banner">
+        <img id="banner_img" src="">
+        <span id="course_title"><span id="course_num">Computer Science:</span> C Programming Tutorial</span>
+        <div class="clear_shim"></div>
+    </div>
+
+
+<section id="main_container">
+
+    <div id="left_nav">
+        <ul>
+            <a href="index.html"><li>HOME</li></a>
+            <a href="syllabus.html"><li>SYLLABUS</li></a>
+<!--
+            <a href="codewalks.html"><li>CODEWALKS</li></a>
+-->
+            <a href="schedule.html"><li>SCHEDULE</li></a>
+            <li>MODULES</li>
+            <li> <ul>
+                <a href="module0.html"><li>0</li></a>
+                <a href="module1.html"><li>1</li></a>
+                <a href="module2.html"><li>2</li></a>
+                <a href="module3.html"><li>3</li></a>
+                <a href="module4.html"><li>4</li></a>
+                <a href="module5.html" class="active_pg"><li>5</li></a>
+                <a href="module6.html"><li>6</li></a>
+            </ul>
+            </li>
+            <a href="http://piazza.com/ccs.neu.edu/fall2018/cs5001/home" target="_blank"><li>PIAZZA</li></a>
+        </ul>
+
+    </div>
+
+
+    <div id="tab_container"> <!-- Tab Container -->
+
+        <div id="top_tabs">
+            <ul>
+                <li><a href="#ttab-1">Overview</a></li>
+                <li><a href="#ttab-3">Objectives</a></li>
+            </ul>
+            <hr class="tabs_hr"/>
+            <div id="ttab-1" class="t_div mod_overview">
+                <h3>Processing Arguments, Putting it All Together</h3>
+<!--
+                <p>
+                In this module, we will look at how to use generate external documenation
+                using an automatic documentation generator that can produce online documentation
+                form comment tags within the source code. Automatically generating external
+                documenation directly from the source code is one of the best ways to ensure
+                accurate and timely external documentation for program functions.
+                </p>
+-->
+				<p>
+              In this module, we will look at two topics in
+              processing arguments. The first is processing
+              varialble numbers of arguments to varidic
+              functions, and the facilities in C that enable
+              this. We will also learn how to pass
+              arguments to a program and how to use
+              values passed to costumize program behavior.
+              We will examine several libraries that are
+              available that provide a convenient way to
+              consistently process arguemnts and
+                option values specified by users when the
+                program is run.
+                </p>
+                <p>
+                With the advent of social media on the web, a new phenomenon known as a <em>chatbot</em>"
+                has becoming more pervasive. A chatbot is a computer program that conducts a conversation
+                via text or voice. Such programs are often designed to convincingly simulate how a human
+                would behave as a conversational partner, thereby passing the Turing test.
+                In this final module, we will briefly survey the history of chatbot like programs, and
+                examine a simple chatbot that uses many of the techniques we have studied in this course.
+
+                </p>
+
+            </div>
+
+            <div id="ttab-3" class="t_div objectives">
+<!--
+                <ol>
+                    <li>Learn about command shells as a way to interact with the
+                    operating system.</li>
+                    <li>Review small subset of the available command line tools.</li>
+                    <li>See how command shells allow command line tools to be combined
+                    to perform more advanced functions.</li>
+                    <li>Review the facilities provided by a command shell to create
+                    commplete applications by creating shell scripts.</li>
+                    <li>Learn create and edit shell scripts using a visual text editor.</li>
+                </ol>
+-->
+            </div>
+        </div>
+
+        <div id="bottom_tabs">
+            <ul>
+<!--
+                <li><a href="#btab-1">Lecture 2</a></li>
+                <li><a href="#btab-4">Assignment 1</a></li>
+-->
+                <li><a href="#btab-2">Lecture 14</a></li>
+                <li><a href="#btab-3">Lecture 15</a></li>
+                <li><a href="#btab-5">Exercises</a></li>
+<!--
+                <li><a href="#btab-6">Assignment 10</a></li>
+-->
+
+            </ul>
+            <hr class="tabs_hr"/>
+<!--  Skipped -- holiday during fall semester
+            <div id="btab-1" class="t_div readings" >
+                <h3>The C Preprocessor</h3>
+				<p>
+                </p>
+
+                <h3>Readings</h3>
+                  <h4>Class presentation</h4>
+            	  <ul class="readling_list">
+                    <li>
+                    <a target="_blank" class="hlink" href=
+                    "misc/Lecture_2_Notes.pdf">Lecture 14 presentation</a> <em>(coming soon)</em>
+                    </li>
+                  </ul>
+                  <h4>C Tutorial readings</h4>
+                  <ul>
+                    <li>
+                    <a target="_blank" class="hlink" href=
+                    "https://www.tutorialspoint.com/cprogramming/c_preprocessors.htm">C Preprocessors/a>
+                    </li>
+                  </ul>
+            </div>
+-->
+            <div id="btab-2" class="t_div readings" >
+                <h3>Processing Arguments</h3>
+				<p>
+So far, we have only used functions with a fixed number of arguments. In C and many other languages, it is possible to create functions with variable numbers of arguments.
+We have already seen an example of a function with a variable number of arguments: printf(), which takes a format string and additional arguments that provide values to the format string.
+We will look at how to process variable numbers of arguments and several examples of how this technique is used.
+</p>
+<p>
+A programs can also be passed arguments that can be used to provide data, and to customize the program behavior .
+Values can be passed when running an application from a command line like “bash” in Unix, or “cmd.com” or “powershell” in Windows., or from within an IDE such as Eclipse.
+We will look at several ways to process and use program arguments.
+                </p>
+
+                <h3>Readings</h3>
+                  <h4>Class presentation</h4>
+            	  <ul class="readling_list">
+                    <li>
+                    <a target="_blank" class="hlink" href=
+                    "resources/Lecture_14_Notes.pdf">Lecture 14 presentation</a>
+                    </li>
+                  </ul>
+                  <h4>C Tutorial readings</h4>
+                  <ul>
+                    <li>
+                    <a target="_blank" class="hlink" href=
+                    "https://www.tutorialspoint.com/cprogramming/c_command_line_arguments.htm">
+                    Command Line Arguments</a>. From TutorialsPoint
+                    </li>
+                    <li>
+                    <a target="_blank" class="hlink" href="https://en.wikipedia.org/wiki/Getopt">Getopt</a> command line processing library. From Wikipedia.
+                    </li>
+                  </ul>
+            </div>
+
+            <div id="btab-3" class="t_div readings" >
+                <h3>A Chatbot Named "ELIZA"</h3>
+				<p>
+				According to Joseph Weizenbaum, he wrote ELIZA between 1964 and
+                1966 as a parody of “the responses of a non-directional [Rogerian] psychotherapist
+                in an initial psychiatric interview.”. The program examined the text input by a user for keywords,
+                and transformed the input into an output. The DOCTOR script determined the keywords,
+                set the values of keywords, and set the rules of transformation for the output.
+                </p>
+                <p>
+                The program gave deceptively intelligent responses that deceived many individuals when
+                first using the program. In fact, ELIZA’s responses were so convincing that Weizenbaum and
+                several others have anecdotes of users becoming emotionally attached to the program,
+                occasionally forgetting that they were conversing with a computer.
+                </p>
+                <p>
+                Weizenbaum’s own secretary reportedly asked Weizenbaum to leave the room so that she and
+                ELIZA could have a real conversation. Weizenbaum was surprised by this, later writing,
+                “I had not realized… that extremely short exposures to a relatively simple computer
+                program could induce powerful delusional thinking in quite normal people.”
+                </p>
+                <p>
+                Chatbots are now big business, with applications from influencing social media,
+                to taking over from human telephone solicitors (apparently very successfully among
+                among certain demographic groups). There are even companies who specialize in creating custom
+                chatbots for companies to deploy
+                </p>
+
+                <h3>Readings</h3>
+                  <h4>Class presentation</h4>
+            	  <ul class="readling_list">
+                    <li>
+                    <a target="_blank" class="hlink" href=
+                    "misc/Lecture_15_Notes.pdf">Lecture 15 presentation</a> <em>(coming soon)</em>
+                    </li>
+                  </ul>
+                  <h4>Additional readings</h4>
+                  <ul>
+                    <li>
+                    <a target="_blank" class="hlink" href=
+                    "https://en.wikipedia.org/wiki/Chatbot">Chatbot</a> (from Wikipedia)
+                    </li>
+                    <li>
+                    <a target="_blank" class="hlink" href=
+                    "https://en.wikipedia.org/wiki/Turing_test">Turing test</a> (from Wikipedia)
+                    <li>
+                    Alan Turing,
+                    <a target="_blank" class="hlink" href=
+"https://www.csee.umbc.edu/courses/471/papers/turing.pdf"
+                    >Computing Machinery and Intelligence</a>,
+                    Mind 49:433-460, 1950.
+                    </li>
+                    <li>
+                    <a target="_blank" class="hlink" href=
+                    "https://en.wikipedia.org/wiki/ELIZA">ELIZA</a> (from Wikipedia)
+                    </li>
+                    <li>
+                    Joseph Weizenbaum,
+                    <a target="_blank" class="hlink" href=
+"http://web.stanford.edu/class/cs124/p36-weizenabaum.pdf">
+                    ELIZA: A Computer Program For the Study of Natural Language Communication Between Man And Machine</a>,
+                    Communications of the ACM, vol 9, no. 1, Jan 1966.
+                    </li>
+                  </ul>
+            </div>
+
+            <div id="btab-5" class="t_div assignment" >
+            	<h3>Additional Exercises</h3>
+                <p>Here are additional exercises that will give you more practice with the subject material in this module.</p>
+			<h3>Variadic Functions</h3>
+            <ol>
+            	<li>
+                Create a function <em>double avg(unsigned n, ...)</em> that
+                computes the average of its double variadic arguments.
+                The number of arguments is specified by <em>n</em>. If the
+                number of arguments is 0, return the double constant
+                <strong>NaN</strong>.
+            	</li>
+                <li>
+                Create a function
+                <em>unsigned maxDistance(int val, unsigned n, ...)</em>
+                that takes a value and a number of int variadic arguments
+                specified by <em>n</em>. The function computes the furthest
+                absolute distance from the value passed in to any of the
+                variadic arguments. If n is 0, return 0.
+                </li>
+                <li>
+                Create a function
+                <em>unsigned wordCount(const char*, ...)</em> that takes one
+                or more <em>const char*</em> parameters to strings. The
+                parameter list is terminated by a <em>NULL</em> pointer.
+                Assume that
+                a word is delimited by a single space (' ') or by the end of
+                string character ('\0'), as with assignment 3. The function
+                returns the number of words in the parameter strings. </li>
+                <li>
+                Extend the <em>vaPrintf()</em> function shown in lecture 14
+                to interpret a non-standard format specifier "%[d" to print
+                an array of integers. The format specifier expects the next
+                argument to be an <strong>unsigned</strong> array count, and
+                the argument after that to be a pointer to an array of
+                that number of ints. The specifier prints the array as a
+                bracketed list, whose fields are separated by commas (',').
+                For example, <em>vaPrintf("%[d", 3, array_of_3)</em> with
+                the values for <em>array_of_3</em> as 2, 4, and 6 would
+                print "[2,4,6]".
+                </li>
+            </ol>
+
+            <h3>Program Arguments</h3>
+            For these problems, use the form of main function that accepts
+            an argument count <em>argc</em> and an array of argument strings
+            <em>argv</em>: <em>int main(int argc, int argv[argc])</em>. The
+       		argument count is always at least 1, and the first argument
+            (<em>argv[0]</em>) is always the name of the program.
+            <ol>
+            	<li>
+                Create a C program whose main function prints its name
+                on the first line, and then additional argument strings,
+                one per line, as "argv[%d]: %s\n" and returns with
+                EXIT_SUCCESS. Test this with 0, 2, and
+                4 additional program arguments.
+                </li>
+                <li>
+                Create a C program whose main function looks for an
+                optional first short argument that can be either
+                "-l" or "-u". If first argument is the option "-l" the
+                program prints lower-cased versions of its additional
+                program arguments one per line, as "argv[%d]: %s\n". If the
+                first argument is the option "-u' the program prints
+                upper-cased versions of its additional arguments. If the
+                first argument is any other option beginning with '-' the
+                program prints a usage message and returns EXIT_FAILURE.
+                Otherwise, the program prints its additional program
+                arguments in their original forms and returns with
+                EXIT_SUCCESS.
+                </li>
+                <li>
+                Create a version of the previous C program to accept an
+                optional first long argument that can be either "--lower"
+                or "--upper".
+                </li>
+                <li>
+                Modify the short option verions of the previous C program
+                to accept an additional optional short program argument
+                "-n <em>count</em>" that specifies the number of times to
+                repeat each additional argument on its output line,
+                separated by spaces. This option can be specified either
+                before or after the "-l" or "-u" option if they are present.
+                The <em>count</em> is required if the "-n" option is
+                specified and the program returns EXIT_FAILURE if it is not
+                specified.
+                </li>
+                <li>
+                Modify the long option version of the previous C program
+                to accept an additional long argument
+                "--nreps=<em>count</em>" and the program returns
+                EXIT_FAILURE if the <em>count</em> is not specified.
+                </li>
+                <li>
+                Use the standard C <em>getopt</em> argument processing
+                functions to implement the previous short option C program.
+                </li>
+                <li>
+                Use the standard C <em>getopt</em> argument processing
+                functions to implement the previous long and short option
+                C programs as a single program.
+                </li>
+            </ol>
+          </div>
+<!--
+            <div id="btab-6" class="t_div assignment" >
+                <ul class="assign_info">
+                    <li>
+                    DUE DATE: <span class="due_date">Tue, 17 Oct before class</span><br/>
+                    </li>
+                </ul>
+
+                <p>
+                In Assignment 8, "pubisher.c" used a local cache of dynamically
+                created <em>Publisher</em> instances created by <em>createPublisher()</em>
+                when the <em>publisher</em> paramater was NULL. The assignment had you
+                create a similar local cache for dynamically created <em>Journal</em>
+                instances created by <em>createJournal()</em>.
+                </p>
+                <p>
+                The cache code for both is very similar, except for the type of pointer
+                being stored. This assignment is to implement a "generic" variable size
+                cache that can be used to store any kind of pointer. The <em>Vcache</em>
+                struct has variable-size array of <em>void*</em> pointers. The
+                <em>addVcacheItem()</em> function casts a pointer of any type to a
+                <em>void*</em> pointer for storage in the array. The caller of the
+                <em>getVcacheItemAt()</em> function must cast the <em>void*</em> return
+                value back to a pointer of the actual type.
+                </p>
+                <p>
+                The code for this assignment is in the assignment-10 repository, Your task
+                is to implement the code for the empty functions in "vcache.c" that provides
+                the required functionality, and unit tests in "vcache_test.c" that test
+                the functions.  Do not alter any other file unless specifically instructed
+                to do so. Your testing code can only use the functions provided, and should
+                not access the fields of the opaque <em>Vcache</em> struct directly.
+                A recommendation is to use pointers to literal strings for testing, and try
+                inserting the same literals multiple times to test the various functions.
+                </p>
+                <p>
+                Although it is not part of this problem, you may want to consider reimplementing
+                the caching in "publisher.c" and "journal.c" to use the <em>Vcache</em> structs
+                and functions.
+                </p>
+            </div>
+-->
+
+        </div>
+
+    </div> <!-- END Tab Container -->
+
+</section>
+
+
+</body>
+
+</html>

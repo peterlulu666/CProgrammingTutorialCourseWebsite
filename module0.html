@@ -1,0 +1,342 @@
+
+<!--
+*
+* © 2015 Northeastern University
+* College of Computer and Information Science (CCIS)
+*
+*
+-->
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- styles -->
+
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/main_styles.css">
+
+    <!-- source code highlighting using Prism -->
+    <link href="css/prism.css" rel="stylesheet" />
+
+
+    <!-- scripts -->
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+
+
+    <title>Computer Science: C Programming Tutorial</title>
+
+    <script>
+        $(function() {
+            $( "#top_tabs" ).tabs();
+
+        });
+
+        $(function() {
+            $( "#bottom_tabs" ).tabs();
+
+        });
+
+
+    </script>
+
+
+</head>
+
+<body>
+<!-- source code highlighting using Prism -->
+<script src="js/prism.js"></script>
+<script>
+
+</script>
+
+    <div id="banner">
+        <img id="banner_img" src="">
+        <span id="course_title"><span id="course_num">Computer Science:</span> C Programming Tutorial</span>
+        <div class="clear_shim"></div>
+    </div>
+
+
+<section id="main_container">
+
+    <div id="left_nav">
+        <ul>
+            <a href="index.html"><li>HOME</li></a>
+            <a href="syllabus.html"><li>SYLLABUS</li></a>
+            <a href="schedule.html"><li>SCHEDULE</li></a>
+            <li>MODULES</li>
+            <li><ul>
+                <a href="module0.html" class="active_pg"><li>0</li></a>
+                <a href="module1.html"><li>1</li></a>
+                <a href="module2.html"><li>2</li></a>
+                <a href="module3.html"><li>3</li></a>
+                <a href="module4.html"><li>4</li></a>
+                <a href="module5.html"><li>5</li></a>
+                <a href="module6.html"><li>6</li></a>
+            </ul>
+            </li>
+            <a href="http://piazza.com/ccs.neu.edu/fall2018/cs5001/home" target="_blank"><li>PIAZZA</li></a>
+        </ul>
+    </div>
+
+
+    <div id="tab_container"> <!-- Tab Container -->
+
+        <div id="top_tabs">
+            <ul>
+                <li><a href="#ttab-1">Overview</a></li>
+                <!--<li><a class="hlink" href="#ttab-2">Course Map</a></li>-->
+                <li><a href="#ttab-3">Objectives</a></li>
+            </ul>
+            <hr class="tabs_hr"/>
+            <div id="ttab-1" class="t_div mod_overview">
+                <h3>Computers, Programs, and Programming Languages</h3>
+                <p>
+                This module will help you get setup with the tools used in
+                the course. This includes creating your CCIS ID, using the
+                Piazza email service for course communications, becoming
+                familiar with the CCIS GitHub repository for managing code
+                for your assignments and exams, and installing and configuring
+                the Eclipse integrated development environment (IDE).
+                </p>
+                <p>
+                Next, this module provides a gentle introduction to computers,
+                computer programs, and how programs are expressed using programming
+                languages. We will also learn a little about the C programming
+                language, including its history, why the language is being used in
+                this class, and how it relates to languages used in other class.
+                </p>
+                <p>
+                Finally, we will install and configure the Eclipse integrated
+                development environment (IDE) that will help us create, debug,
+                document, and test the programs we create in this class
+                </p>
+            </div>
+
+            <!-- <div id="ttab-2" class="t_div">-->
+            <!--Yeah.-->
+            <!--</div>-->
+
+            <div id="ttab-3" class="t_div objectives">
+                <ol>
+                    <li>
+                        Create your CCIS account and know your CCIS login.
+                    </li>
+                    <li>
+                        Install and setup your Eclipse environment.
+                    </li>
+                    <li>
+                        Compile and run simple C programs.
+                    </li>
+                    <li>
+                        Login to your CCIS GitHub account using your CCIS login.
+                    </li>
+                    <li>
+                        Create an empty repository in your CCIS GitHub account.
+                    </li>
+
+                    <li>
+                        Register with the Course's Piazza forum.
+                    </li>
+                    <li>
+                        Install and configure the Eclipse IDE for C/C++ and plugins.
+                    </li>
+                    <li>
+                    	Learn the basics of computers, programs, and programming languages
+                </ol>
+
+            </div>
+
+        </div>
+
+
+
+        <div id="bottom_tabs">
+            <ul>
+                <li><a href="#btab-1">CCIS Account</a></li>
+                <li><a href="#btab-2">Piazza</a></li>
+                <li><a href="#btab-3">CCIS GitHub</a></li>
+                <li><a href="#btab-5">Eclipse IDE</a></li>
+                <li><a href="#btab-4">Lecture 1</a></li>
+            </ul>
+
+            <hr class="tabs_hr"/>
+
+            <div id="btab-1" class="t_div tutorial" >
+            	<!--CCIS Account -->
+            	<p>
+            	For the purposes of this class you will need to
+            	have a valid CCIS account. Please visit
+            	<a class="hlink" href=
+"http://howto.ccs.neu.edu/howto/accounts-homedirs/how-to-sign-up-for-a-ccis-account/">
+				CCIS
+            	Account Creation</a> and follow the instructions
+            	there in order to create your CCIS account.
+            	</p>
+            	<p>
+            	Your CCIS account will provide you access to CCIS resources.
+                including the School's GitHib source code repository that you
+                will use for this and other classes.
+            	</p>
+          	</div>
+
+            <div id="btab-2" class="t_div tutorial" >
+                <!--Piazza-->
+                <p>
+                We will be using Piazza for all email communication
+                and online discussion. Everyone on the class roster has
+                already been registered using the preferred email address
+                you provided when you regitered. If you have not already
+                done so, please respond to the confirmation email to join
+                the <a class="hlink" href=
+                "https://piazza.com/northeastern/fall2017/cs5001">class
+                Piazza group</a>. The instructors and TA will use this group
+                to send you information about the course throughout the
+                semester. If you did not receive an invitation, please
+                contact an instrctor or TA as soon as possible.
+                </p>
+            </div>
+
+
+            <div id="btab-3" class="t_div tutorial" >
+                <!--CCIS GitHub-->
+                <p>
+                We will be using the NEU CCIS department's GitHub repository
+                server throughout the course to distribute programming examples,
+                submit homework assignments and exam solutions, and keep track of
+                your work.
+                </p>
+                <p>
+                When you created your CCIS account, you also received an acccount on
+                the CCIS GitHub server. Use your CCIS login and password to access the
+                <a target="_blank" class="hlink" href="https://github.ccs.neu.edu/">
+                CCIS GitHub Server</a>.
+                </p>
+                <p>
+                You can interact with the GitHub server through its web-based user
+                interface, you can download a GitHub Desktop client that enables you
+                to manage your repositories locally. The client is availble for Windows,
+                MacOS <a target="_blank" class="hlink" href="https://desktop.github.com">
+                here</a>.
+                </p>
+                <img width="75%" src=
+                "https://desktop.github.com/images/github-desktop-screenshot-mac.png"/>
+                <p>
+                We will cover the basic of using GitHub and the GitHub desktop in class.
+                There are also a number of online tutorials about using GitHub, including:
+                <ul>
+                  <li>
+                  <a target="_blank" class="hlink" href=
+                  "https://guides.github.com/activities/hello-world/">GitHub Hellow World</a>
+                  from GitHub.
+                  </li>
+                  <li>
+                  <a target="_blank" class="hlink" href=
+                  "https://www.codeschool.com/courses/mastering-github">Mastering GitHub</a>
+                  from Code School (free account registration required).
+                  </li>
+                </ul>
+            </div>
+
+            <div id="btab-4" class="t_div tutorial">
+            <!-- Lecture 1 -->
+                <h3>Computers, Programs, and Programming Language</h3>
+				<p>
+                This lecture presents a gentle introduction to what a computer is and how
+                it operates. It shows the functional parts of a computer, and shows how
+                those parts work together to carry out sequences of instructions that solve
+                problems.
+                </p>
+                <p>
+                We also briefly explore what is meant by a computer program, and how the
+                program is loaded and run by a computer.
+                </p>
+                <p>
+                Next, we look at how a computer programming language enables a
+                developer to create programs. We will see that programming languages
+                can range from low-level, corresponding to native instructions that the
+                computer perfors, to mid-level ones that can easily be translated to
+                native instructions, to high-level ones tha require the support of
+                additional layeers of software.
+                </p>
+                <p>
+                Finally, we take a first look at the C programming language that we will
+                use for this course, a simple, mid-level language which provides features
+                that make it relatively simple to learn and use. It also strongly
+                influenced several higher-level languages, including C++ and Java, that
+                will also be used in throughout the graduate curriculum.
+                </p>
+
+                <h3>Readings</h3>
+                  <h4>Class presentation</h4>
+            	  <ul class="readling_list">
+                    <li>
+                    <a target="_blank" class="hlink" href="resources/Lecture_1_Notes.pdf">
+                    Lecture 1 presentation</a>
+                    </li>
+                  </ul>
+                  <h4>Additional readings</h4>
+            	  <ul class="readling_list">
+                    <li>
+                    <a target="_blank" class="hlink" href=
+                    "https://en.wikipedia.org/wiki/History_of_programming_languages">
+                    History of Programming Languages</a> from Wikipedia
+                    </li>
+                    <li>
+                    <a target="_blank" class="hlink" href=
+                    "https://en.wikipedia.org/wiki/Imperative_programming">
+                    Imperative and Procedural Programming</a> from Wikipedia
+                    </li>
+                  </ul>
+           	</div>
+
+            <div id="btab-5" class="t_div tutorial">
+            	<p>We will use the Eclipse Integrated Development Environment (IDE) to
+                write, test, and debug applications for the class. Eclipse is open
+                source software produced and maintained by the Eclipse Foundation.
+                This IDE is used by many software professionals, so gaining experience
+                using it will be valuable to you in future employment. Follow the
+                steps in this document to install and configure the Eclipse IDE.</p>
+ 				<ul class="reading_list">
+             		<li >
+            			<a href="resources/EclipseInstallation.pdf" target="_blank">
+                        Installing and Configuring Eclipse IDE</a>
+                	</li>
+                </ul>
+                <p>We use the Doxygen document generator to generate external
+                documentation for C programs we write in this class. Follow the
+                steps in this document to install and configure the Doxygen
+                document generator for Eclipse.</p>
+ 				<ul class="reading_list">
+             		<li >
+            			<a href="resources/DoxygenInstallation.pdf" target="_blank">
+                        Installing and Configuring Doxygen for Eclipse IDE</a>
+                	</li>
+                </ul>
+                <p>We will use the CUnit unit test framework to test the C
+                programs we write in class. Follow the steps in this document
+                to install and configure the CUnit unit test framework for
+                Eclipse.</p>
+ 				<ul class="reading_list">
+                	<li >
+            			<a href="resources/CUnitInstallation.pdf" target="_blank">
+                        Installing and Configuring CUnit for Eclipse IDE</a>
+                	</li>
+				</ul>
+            </div>
+        </div> <!-- END Tab Container -->
+
+</section>
+
+
+</body>
+
+</html>

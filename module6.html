@@ -1,0 +1,314 @@
+
+<!--
+*
+* © 2015 Northeastern University
+* College of Computer and Information Science (CCIS)
+*
+*
+-->
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- styles -->
+
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/main_styles.css">
+
+    <!-- source code highlighting using Prism -->
+    <link href="css/prism.css" rel="stylesheet" />
+
+
+    <!-- scripts -->
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+
+
+    <title>Computer Science: C Programming Tutorial</title>
+
+    <script>
+        $(function() {
+            $( "#top_tabs" ).tabs();
+
+        });
+
+        $(function() {
+            $( "#bottom_tabs" ).tabs();
+
+        });
+
+
+    </script>
+
+
+</head>
+
+<body>
+<!-- source code highlighting using Prism -->
+<script src="js/prism.js"></script>
+<script>
+
+</script>
+
+    <div id="banner">
+        <img id="banner_img" src="">
+        <span id="course_title"><span id="course_num">Computer Science:</span> C Programming Tutorial</span>
+        <div class="clear_shim"></div>
+    </div>
+
+
+<section id="main_container">
+
+    <div id="left_nav">
+        <ul>
+            <a href="index.html"><li>HOME</li></a>
+            <a href="syllabus.html"><li>SYLLABUS</li></a>
+<!--
+            <a href="codewalks.html"><li>CODEWALKS</li></a>
+-->
+            <a href="schedule.html"><li>SCHEDULE</li></a>
+            <li>MODULES</li>
+            <li> <ul>
+                <a href="module0.html"><li>0</li></a>
+                <a href="module1.html""><li>1</li></a>
+                <a href="module2.html"><li>2</li></a>
+                <a href="module3.html"><li>3</li></a>
+                <a href="module4.html"><li>4</li></a>
+                <a href="module5.html"><li>5</li></a>
+                <a href="module6.html" class="active_pg"><li>6</li></a>
+<!--
+                <a href="module8.html"><li>8</li></a>
+                <a href="module9.html"><li>9</li></a>
+                <a href="module10.html"><li>10</li></a>
+-->
+            </ul>
+            </li>
+            <a href="http://piazza.com/ccs.neu.edu/fall2018/cs5001/home" target="_blank"><li>PIAZZA</li></a>
+        </ul>
+
+    </div>
+
+
+    <div id="tab_container"> <!-- Tab Container -->
+
+        <div id="top_tabs">
+            <ul>
+                <li><a href="#ttab-1">Overview</a></li>
+                <li><a href="#ttab-3">Objectives</a></li>
+            </ul>
+            <hr class="tabs_hr"/>
+            <div id="ttab-1" class="t_div mod_overview">
+                <h3>Putting it All Together: Solving a Real-World Problem</h3>
+                <p>
+                With the advent of social media on the web, a new phenomenon known as a <em>chatbot</em>"
+                has becoming more pervasive. A chatbot is a computer program that conducts a conversation
+                via text or voice. Such programs are often designed to convincingly simulate how a human
+                would behave as a conversational partner, thereby passing the Turing test.
+                </p>
+                <p>
+                Chatbots are typically used in dialog systems for various practical purposes including
+                customer service or information acquisition. Some chatbots use sophisticated natural
+                language processing systems, but many simpler systems scan for keywords within the input,
+                then pull a reply with the most matching keywords, or the most similar wording pattern,
+                from a database.
+                </p>
+                <p>
+                In this final module, we will briefly survey the history of chatbot like programs, and
+                examine a simple chatbot that uses many of the techniques we have studied in this course.
+                <p>
+            </div>
+
+            <div id="ttab-3" class="t_div objectives">
+<!--
+                <ol>
+                    <li>Learn about command shells as a way to interact with the
+                    operating system.</li>
+                    <li>Review small subset of the available command line tools.</li>
+                    <li>See how command shells allow command line tools to be combined
+                    to perform more advanced functions.</li>
+                    <li>Review the facilities provided by a command shell to create
+                    commplete applications by creating shell scripts.</li>
+                    <li>Learn create and edit shell scripts using a visual text editor.</li>
+                </ol>
+-->
+            </div>
+        </div>
+
+        <div id="bottom_tabs">
+            <ul>
+                <li><a href="#btab-1">Lecture 16</a></li>
+<!--
+                <li><a href="#btab-4">Assignment 11</a></li>
+                <li><a href="#btab-2">Lecture 2</a></li>
+                <li><a href="#btab-3">Lecture 3</a></li>
+                <li><a href="#btab-5">Assignment 2</a></li>
+-->
+            </ul>
+            <hr class="tabs_hr"/>
+            <div id="btab-1" class="t_div readings" >
+                <h3>A Chatbot Named "ELIZA"</h3>
+				<p>
+				According to Joseph Weizenbaum, he wrote ELIZA between 1964 and
+                1966 as a parody of “the responses of a non-directional [Rogerian] psychotherapist
+                in an initial psychiatric interview.”. The program examined the text input by a user for keywords,
+                and transformed the input into an output. The DOCTOR script determined the keywords,
+                set the values of keywords, and set the rules of transformation for the output.
+                </p>
+                <p>
+                The program gave deceptively intelligent responses that deceived many individuals when
+                first using the program. In fact, ELIZA’s responses were so convincing that Weizenbaum and
+                several others have anecdotes of users becoming emotionally attached to the program,
+                occasionally forgetting that they were conversing with a computer.
+                </p>
+                <p>
+                Weizenbaum’s own secretary reportedly asked Weizenbaum to leave the room so that she and
+                ELIZA could have a real conversation. Weizenbaum was surprised by this, later writing,
+                “I had not realized… that extremely short exposures to a relatively simple computer
+                program could induce powerful delusional thinking in quite normal people.”
+                </p>
+                <p>
+                Chatbots are now big business, with applications from influencing social media,
+                to taking over from human telephone solicitors (apparently very successfully among
+                among certain demographic groups). There are even companies who specialize in creating custom
+                chatbots for companies to deploy
+                </p>
+
+                <h3>Readings</h3>
+                  <h4>Class presentation</h4>
+            	  <ul class="readling_list">
+                    <li>
+                    <a target="_blank" class="hlink" href=
+                    "misc/Lecture_16_Notes.pdf">Lecture 16 presentation</a> <em>(coming soon)</em>
+                    </li>
+                  </ul>
+                  <h4>Additional readings</h4>
+                  <ul>
+                    <li>
+                    <a target="_blank" class="hlink" href=
+                    "https://en.wikipedia.org/wiki/Chatbot">Chatbot</a> (from Wikipedia)
+                    </li>
+                    <li>
+                    <a target="_blank" class="hlink" href=
+                    "https://en.wikipedia.org/wiki/Turing_test">Turing test</a> (from Wikipedia)
+                    <li>
+                    <a target="_blank" class="hlink" href=
+                    "https://en.wikipedia.org/wiki/ELIZA">ELIZA</a> (from Wikipedia)
+                    </li>
+                  </ul>
+            </div>
+
+<!--
+             <div id="btab-4" class="t_div assignment" >
+                <ul class="assign_info">
+                    <li>
+                    DUE DATE: <span class="due_date">These are self-study exercises
+                    that are not turned in for grading.</span><br/>
+                    </li>
+                </ul>
+                <ol>
+                <li>
+				Write a function
+                <em>char *makePalendrome(char *palText, const char *plainText)</em>. This
+                function writes the palendrome of the <em>plainText</em> input to the
+                <em>palText</em> output. A palendrome has a mirror image of the left half
+                of its text on the right half. For example, "abcd" becomes "abcddcba".
+                Assume that palText has sufficient space
+                for the output palendrome. The function returns a pointer to <em>palText</em>.
+                </li>
+                <li>
+                Write a function
+                <em>bool isPalendrome(const char* txt)</em> that returns <em>true</em> if
+                the input text is a palendrome.
+                </li>
+                <li>
+                Write a function
+                <em>void transpose(int rows, int cols,
+                const int mat[rows][cols], int trans[cols][rows])</em>
+                that transposes a <em>rows</em> <strong>x</strong> <em>cols</em> 2D array
+                <em>mat</em> into the 2D array <em>cols</em> <strong>x</strong> <em>rows</em>
+                2D array <em>trans</em>. Each <em>mat</em> entry <em>mat[r][c]</em>
+                becomes the <em>trans</em> entry <em>trans[c][r]</em>.
+                <pre>
+                Example:
+
+                     mat:    1  2  3
+                             4  5  6
+
+                     trans:  1  4
+                             2  5
+                             3  6
+
+                </pre>
+                </li>
+                <li>
+                Write a function <em>makeIdentity(int n int mat[n][n])</em>
+                that initializes the <em>n</em> <strong>x</strong> <em>n</em> square 2D
+                array <em>mat</em> with the value 1 when the row number is also the column
+                number, and the value 0 otherwise.
+                </li>
+                <li>
+                A U.S. Social Security Number (SSN) is a 9-digit number that is written
+                in three groups of digits: NNN-NN-NNNN.
+                  <ul>
+                  <li>
+                  Write a function <em>unsigned int parseSSN(const char *str)</em> that
+                  parses a string into an unsigned integer representation. The function
+                  returns 0 if the SSN is not a valid SSN.
+                  </li>
+                  <li>
+                  Write a function <em>char *ssnToString(unsigned int ssn, char *str)</em>
+                  that creates a string representation of the SSN with proper punctuation.
+                  </li>
+                  </ul>
+                </li>
+                <li>
+                An equilateral triangle has equal length sides:
+                <div align="center">
+                <img src="http://x3dgraphics.com/examples/X3dForAdvancedModeling/GeometricShapes/_thumbnails/TriangleBlackLinesThumbnail.png">
+                </div>
+                Given the usual definition of a <em>Point</em> struct and the
+                <em>double distance(Point *p1, Point* p2)</em> function,
+                  <ul>
+                  <li>
+                  Define an<em>EquilateralTriange</em> struct with two points:
+                  the bottom left of the triangle (<em>basePoint</em>), and the
+                  apex of the triangle (<em>apexPoint</em>).
+                  </li>
+                  <li>
+                  Write a function <em>double getWidth(EquilateralTriangle *triangle) </em>
+                  that returns the width of the triangle.
+                  </li>
+                  <li>
+                  Write a function <em>double getHeight(EquilateralTriangle *triangle) </em>
+                  that returns the height of the triangle.
+                  </li>
+                  <li>
+                  Write a function <em>double getSide(EquilateralTriangle *triangle) </em>
+                  that returns the length of a side.
+                  </li>
+                  <li>
+                  Write a function <em>double getArea(EquilateralTriangle *triangle)</em>
+                  that returns the area of the triangle.
+                  </li>
+                </ol>
+            </div>
+-->
+
+        </div>
+
+    </div> <!-- END Tab Container -->
+
+</section>
+
+
+</body>
+
+</html>

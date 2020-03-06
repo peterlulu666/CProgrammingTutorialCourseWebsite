@@ -1,0 +1,538 @@
+
+<!--
+*
+* © 2015 Northeastern University
+* College of Computer and Information Science (CCIS)
+*
+*
+-->
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- styles -->
+
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/main_styles.css">
+
+    <!-- source code highlighting using Prism -->
+    <link href="css/prism.css" rel="stylesheet" />
+
+
+    <!-- scripts -->
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+
+
+    <title>Computer Science: C Programming Tutorial</title>
+
+    <script>
+        $(function() {
+            $( "#top_tabs" ).tabs();
+
+        });
+
+        $(function() {
+            $( "#bottom_tabs" ).tabs();
+
+        });
+
+
+    </script>
+
+
+</head>
+
+<body>
+<!-- source code highlighting using Prism -->
+<script src="js/prism.js"></script>
+<script>
+
+</script>
+
+    <div id="banner">
+        <img id="banner_img" src="">
+        <span id="course_title"><span id="course_num">Computer Science:</span> C Programming Tutorial</span>
+        <div class="clear_shim"></div>
+    </div>
+
+
+<section id="main_container">
+
+    <div id="left_nav">
+        <ul>
+            <a href="index.html"><li>HOME</li></a>
+            <a href="syllabus.html"><li>SYLLABUS</li></a>
+<!--
+            <a href="codewalks.html"><li>CODEWALKS</li></a>
+-->
+            <a href="schedule.html"><li>SCHEDULE</li></a>
+            <li>MODULES</li>
+            <li> <ul>
+                <a href="module0.html"><li>0</li></a>
+                <a href="module1.html"><li>1</li></a>
+                <a href="module2.html" class="active_pg"><li>2</li></a>
+                <a href="module3.html"><li>3</li></a>
+                <a href="module4.html"><li>4</li></a>
+                <a href="module5.html"><li>5</li></a>
+                <a href="module6.html"><li>6</li></a>
+<!--
+                <a href="module8.html"><li>8</li></a>
+                <a href="module9.html"><li>9</li></a>
+                <a href="module10.html"><li>10</li></a>
+-->
+            </ul>
+            </li>
+            <a href="http://piazza.com/ccs.neu.edu/fall2018/cs5001/home" target="_blank"><li>PIAZZA</li></a>
+        </ul>
+
+    </div>
+
+
+    <div id="tab_container"> <!-- Tab Container -->
+
+        <div id="top_tabs">
+            <ul>
+                <li><a href="#ttab-1">Overview</a></li>
+                <li><a href="#ttab-3">Objectives</a></li>
+            </ul>
+            <hr class="tabs_hr"/>
+            <div id="ttab-1" class="t_div mod_overview">
+                <h3>Arrays, Strings, and Pointers</h3>
+                <p>
+                In this module we will learn about arrays, one of the most fundamental and useful
+                constructs in the C language. Arrays provide a way to represent a collection of
+                elements of the same type  Using arrays, programs can represent and process data
+                as diverse as chapter of books, measurements from interplanetary spacecrafts,
+                images from a cell phone cameara, and streaming audio from the latest hit song.
+                </p>
+                <p>
+                Next, we will learn about a method of accessing data called a pointer. A pointer
+                allows a program to get the address of a variable, array, or array element, aud
+                use it to get or update the value of the locaton being pointed to. We will look
+                at several applications of this useful feature, including using them to return
+                multiple values from a function, to accessing elements of an array.
+                </p>
+                <p>
+                Finally, we will look at how the C string functions use pointers to implement
+                more string operations, including ones we have already seen and new ones that
+                provide more advance operations.
+                </p>
+            </div>
+
+            <div id="ttab-3" class="t_div objectives">
+<!--
+                <ol>
+                    <li>Learn about command shells as a way to interact with the
+                    operating system.</li>
+                    <li>Review small subset of the available command line tools.</li>
+                    <li>See how command shells allow command line tools to be combined
+                    to perform more advanced functions.</li>
+                    <li>Review the facilities provided by a command shell to create
+                    commplete applications by creating shell scripts.</li>
+                    <li>Learn create and edit shell scripts using a visual text editor.</li>
+                </ol>
+-->
+            </div>
+        </div>
+
+        <div id="bottom_tabs">
+            <ul>
+                <li><a href="#btab-1">Lecture 5</a></li>
+                <li><a href="#btab-4">Assignment 3</a></li>
+                <li><a href="#btab-2">Lecture 6</a></li>
+                <li><a href="#btab-3">Lecture 7</a></li>
+                <li><a href="#btab-5">Assignment 4</a></li>
+                <li><a href="#btab-6">Exercises</a></li>
+
+            </ul>
+            <hr class="tabs_hr"/>
+            <div id="btab-1" class="t_div readings" >
+                <h3>Arrays and Strings</h3>
+				<p>
+                In this lesson, we will learn about arrays as a way to create collections of
+                fixed size elements of the same type. Arrays allow implementing operatoins that
+                operate on the entier array, as well as on individual elements.
+                </p>
+                <p>
+                We will begin with how an array stored in memory, and how to access the elements
+                of an array using a non-negative index. Then we will see how to declare an array
+                valued variable and specify the size of the array. Next, we will learn how to
+                use multi-dimensional arrays to represent data that is naturally oriented towards
+                this kind of representation, sucn as images.
+                </p>
+                <p>
+                Finally, we will learn how the C languages uses arrays to represesnt textaual
+                information using a special type of character array called a <em>string</em>.
+                Strings enable a number of operations for manuiplating string based information
+                and well look at some of them, and create even some ourselves.
+                </p>
+
+                <h3>Readings</h3>
+                  <h4>Class presentation</h4>
+            	  <ul class="readling_list">
+                    <li>
+                    <a target="_blank" class="hlink" href=
+                    "resources/Lecture_5_Notes.pdf">Lecture 5 presentation</a>
+                    </li>
+                  </ul>
+                  <h4>C Tutorial readings</h4>
+                  <ul>
+                    <li>
+                    <a target="_blank" class="hlink" href=
+                    "https://www.tutorialspoint.com/cprogramming/c_arrays.htm">Arrays</a>
+                    </li>
+                    <li>
+                    <a target="_blank" class="hlink" href=
+                    "https://www.tutorialspoint.com/cprogramming/c_strings.htm">Strings</a>
+                    </li>
+                  </ul>
+            </div>
+
+            <div id="btab-2" class="t_div readings" >
+                <h3>Pointers and Pointer Function Parameters</h3>
+				<p>
+                Every variable in C occupies a memory location when the program is in memory,
+                and every location has a address. C provides a special data type known as a
+                <em>pointer</em> to represent the address, and special operators for getting
+                the address of a variable and for getting the value at that address. The pointer
+                type and the operators provide a number of new ways for a program to access and
+                operate on data.
+                </p>
+                <p>
+                In this lecture we will learn about pointers types and the <em>address-of</em>
+                and <em>value-at</em> operators, and how to use them to implement a new type of
+                function parameter passing scheme known as <em>Call By Reference</em> (CBR).
+                We will look at several examples to understand how ponters work and ways to use
+                CBR to implement functions that would be difficult to do in any other way. In
+                the next lecture, we will look at other ways to use pointers for operating on
+                arrays and strings.
+                </p>
+
+                <h3>Readings</h3>
+                  <h4>Class presentation</h4>
+            	  <ul class="readling_list">
+                    <li>
+                    <a target="_blank" class="hlink" href=
+                    "resources/Lecture_6_Notes.pdf">Lecture 6 presentation</a></em>
+                    </li>
+                  </ul>
+                  <h4>C Tutorial readings</h4>
+                  <ul>
+                    <li>
+                    <a target="_blank" class="hlink" href=
+                    "https://www.tutorialspoint.com/cprogramming/c_pointers.htm">Pointers</a> from TutorialsPoint.com
+                    </li>
+                    <li>
+                    <a target="_blank" class="hlink" href=    "https://www.geeksforgeeks.org/difference-const-char-p-char-const-p-const-char-const-p/">Pointers and const</a>  from GeekForGeeks.com
+                    </li>
+                    <li>
+                    <a target="_blank" class="hlink" href=
+                    "https://www.tutorialspoint.com/cprogramming/c_passing_pointers_to_functions.htm">Passing Pointers to Functions</a>
+                    </li>
+                    <li>
+                    <a target="_blank" class="hlink" href="https://www.tutorialspoint.com/cprogramming/c_function_call_by_reference.htm">Call by Reference</a> from TutorialsPoint.com
+                  </ul>
+            </div>
+
+            <div id="btab-3" class="t_div readings" >
+                <h3>Pointers to Arrays and Strings</h3>
+				<p>
+                This lecture looks at the relationship between pointers and arrays. Arrays
+                are a natural use for pointers because they reprresent contigously allocated
+                blocks of memory that are often addressed sequentially.  As we will see,
+                the sequential access pattern makes it attractive to use pointers rather than
+                array indexing operations to access data. Using pointers avoids an additional
+                set of address arithmetic calculations that must be performed each time.
+                </p>
+                <p>
+                We will also look at how arrays are passed to functions, and how the C
+                compiler translates C operations written in terms of arrays into equivalent
+                pointer operations on the arrays. In this way, C arrays are actually passed
+                to functions by reference because it is the address of the array that is being
+                passed by value.
+                </p>
+                Finally, we will look at how the C string functions use pointers to implement
+                more string operations, including ones we have already seen and new ones that
+                provide more advance operations.
+                </p>
+
+                <h3>Readings</h3>
+                  <h4>Class presentation</h4>
+            	  <ul class="readling_list">
+                    <li>
+                    <a target="_blank" class="hlink" href=
+                    "resources/Lecture_7_Notes.pdf">Lecture 7 presentation</a>
+                    </li>
+                  </ul>
+                  <h4>C Tutorial readings</h4>
+                  <ul>
+                    <li>
+                    <a target="_blank" class="hlink" href=
+                    "https://www.tutorialspoint.com/cprogramming/c_pointer_arithmetic.htm">Pointer Arithmetic</a>
+                    </li>
+                    <li>
+                    <a target="_blank" class="hlink" href=
+  "https://www.tutorialspoint.com/cprogramming/c_array_of_pointers.htm">Arrays of Pointers</a>
+                    </li>
+                    </li>
+                    <li>
+                    <a target="_blank" class="hlink" href=
+                    "https://www.tutorialspoint.com/cprogramming/c_pointer_to_pointer.htm">Pointer to Pointers</a>
+                    </li>
+                    <li>
+                    <a target="_blank" class="hlink" href=
+                    "https://www.tutorialspoint.com/cprogramming/c_return_pointer_from_functions.htm">Returning a Pointer From a Function</a>
+                    </li>
+                    <li>
+                    <a target="_blank" class="hlink" href=
+                    "https://www.tutorialspoint.com/c_standard_library/string_h.htm">C Memory and String Functions</a>
+                    </li>
+
+                  </ul>
+            </div>
+
+            <div id="btab-4" class="t_div assignment" >
+                <ul class="assign_info">
+                    <li>
+                    DUE DATE: <span class="due_date">Wed, 19 Sept by 11:59:59pm</span><br/>
+                    </li>
+                </ul>
+                <p>
+                Include all the specified functions in a file "assignment-3.c". Include a main
+                program that calls the functions with test data and prints the results returned
+                by the functions. Label the output so someone else can understand it. You must
+                provide a documentation block for each function describing its purpose,
+                parameters, and return values as appropriate. Check your file in to the CCIS
+                GitHub repository 2017FACS5001SV/assignment-3-<em>ccisID</em> that was created
+                by your instructor for your ccisID.
+                </p>
+
+                <h4>Problem 1</h4>
+                <p>
+                Write a function <em>void initArray(unsigned int n, int array[], int value)</em>
+                that initializes all <em>n</em> elements of the input <em>array</em> to the specified
+                <em>value</em>.  Test the function in the <em>main()</em> function by calling it with
+                arrays of size 0, 1, and one or two other small sizes, and printing the array on return.
+                Be sure to label the output so someone reading it can verify the result.
+                </p>
+                <p>
+                Here are some examples for int arrays a0 of lenght 0, a1 of length 1, etc.
+                <ul>
+                  <li>initArray(0, a0, 25)&nbsp;&nbspresult: { }</li>
+                  <li>initArray(1, a1, 42)&nbsp;&nbspresult: { 42 }</li>
+                  <li>initArray(3, a3, 88)&nbsp;&nbspresult: { 88, 88, 88 }</li>
+                  <li>initArray(6, a6, 14)&nbsp;&nbspresult: { 14, 14, 14, 14, 14, 14 }</li>
+                </ul>
+
+                <h4>Problem 2</h4>
+                <p>
+                Write a function <em>int wordCount(char str[])</em> that counts the number of words
+                in the input string and return the count as the function result.  A word is a
+                sequence of characters that does not contain a space character (' '). The final word
+                will end with the '\0' end of string character. Use local counters, and a loop to
+                implement this function. (Hint: what is the reliationship between the number of
+                spaces and the number of words if just one space separates words?)
+                </p>
+                <p>
+                Test this function by passing it test strings and verifying that function returns
+                the expected word count. Here are several examples for you to use in testing:
+                </p>
+                <ul>
+                  <li>""&nbsp;&nbsp;length: 0, word count: 0</li>
+                  <li>"the"&nbsp;&nbsp;length: 3, word count: 1</li>
+                  <li>"two words"&nbsp;&nbsp;length: 9, word count: 2</li>
+                  <li>"the quick brown fox"&nbsp;&nbsp;length: 19, word count: 4</li>
+                </ul>
+                <p>
+                Although it is not required, consider how to make your function work corectly if
+                there could multiple spaces before and afterwords.
+                </p>
+            </div>
+
+            <div id="btab-5" class="t_div assignment" >
+                <ul class="assign_info">
+                    <li>
+                    DUE DATE: <span class="due_date">Mon, 24 Sept by 11:59:59pm</span><br/>
+                    </li>
+                </ul>
+                Coming soon.
+
+               	<h3>Tic Tac Toe Game</h3>
+				<p>
+                You will implement several functions in a Tic Tac Toe
+                game. I have already implemented the main that will call the functions
+                you have to write. The board will be stored in a 2 dimensional 3x3 array
+                of char.
+                </p>
+
+				<p>Implement the following functions:</p>
+			    <ul>
+                	<li><strong>initBoard(char board[3][3])</strong> – This function initializes
+                    the 3x3 board array to space characters representing unmarked positions.</li>
+					<li><strong>displayBoard(char board[3][3])</strong> – This displays the
+                    tic-tac-toe board with vertical and horizontal grid lines formed with dashes
+                    and vertical bars, using the characters in the 3x3 board array.
+<pre>
+-------------
+| X | O |   |
+-------------
+|   | O |   |
+-------------
+| O | X | X |
+-------------
+</pre>
+
+                    </li>
+                    <li><strong>markTheBoard(char board[3][3], char mark, int position)</strong> –
+                    This function marks the board based on the position (1-9) and marker character
+                    passed in.</li>
+					<li><strong>hasWon(char board[3][3], char mark)</strong> – Returns true if the
+                    marker character of the player passed in as won the game by examining the values
+                    in the 3x3 board array.</li>
+					<li><strong>isTie(char board[3][3])</strong> – Tells if the board is
+                    currently a tie.</li>
+                </ul>
+				<p>You will use the code in your repository, which is under
+                 2018FACS5001SV/assignment-4-<em>CCIS_ID</em>.</p>
+            </div>
+            <div id="btab-5" class="t_div assignment" >
+            	<h3>Additional Exercises</h3>
+                <p>Here are additional exercises that will give you more practice with the subject material in this module.</p>
+              <h4>Pointers</h4>
+                <ol>
+                	<li>
+                    Write a function <em>void minMax(unsigned n, int array[n],
+                    unsigned *minVal, unsigned *maxVal)</em> that returns the
+                    minimum and maximum values in the array to the locations
+                    pointed to by minVal and maxVal.
+                    </li>
+                	<li>Write a function <em>int *farthestFrom(unsigned n,
+                    int array[n], int val)</em> that returns a pointer to the
+                    element of <em>array</em> whose value is farthest in
+                    absolute value from the value passed in. For example,
+                    given [3,8,7,14] and the value 5, the function returns
+                    a pointer to the <em>array</em> entry for n=14.
+                    </li>
+                </ol>
+              <h4>1D and 2D Arrays</h4>
+                <ol>
+                    <li>
+                    Write a function <em>swapUpperLower(unsigned n,
+                    int array[n])</em> that swaps the upper and lower
+                    subarrays of an array. If <em>n</em> is even,
+                    the lower- and upper-subarrays are swapped. If
+                    <em>n</em> is odd, subarrays to the left and right
+                    of the center element are swapped and the center
+                    value stays fixed. For example, [1,3,5,7,2,4,6,8]
+                    becomes [2,4,6,8,1,3,5,7].
+                    </li>
+                	<li>Write a function double <em>avg(unsigned n,
+                    double array[])</em> that computes the average of the
+                    values in the array.  If the number of elements is 0,
+                    return the double constnat <strong>NaN</strong>.
+                    </li>
+                	<li>Write a function <em>void rotateLeft(unsigned n, int array[n])</em>
+                    that shifts the elements in the n element array
+                    left by one position
+                    and moves the first element to the end position. For
+                    example, [10, 5, 2, 16] becomes [5, 2, 16, 10].
+                    </li>
+                	<li>
+                    Write a function
+                    <em>void mask(unsigned n, int array[n],
+                    bool maskArray[n], int val)</em> that sets all elements in
+                    <em>array</em> to to <em>val</em> if the corresponding
+                    value in <em>maskArray</em> is <strong>true</strong> and
+                    leaves it unchanged if the corresponding value in
+                    <em>maskArray</em> is <strong>false</strong>.
+                    </li>
+                	<li>
+                    Write a function
+                    <em>void addToAll(unsigned n, int array[n], int val)</em>
+                    that given an int <em>array</em> of size <em>n</em>, adds
+                    <em>val</em> to every entry.
+                    </li>
+                    <li>
+                    Write a function
+                    <em>transpose(unsigned nRows, unsigned nCols,
+                    int to[ncols][nrows], int from[nrows][ncols]);</em>
+                    that given an <em>nRows</em> x <em>nCols</em> array
+                    <em>from</em>,
+                    transposes it into a <em>nCols</em> x <em>nRows</em>
+                    array <em>to</em>.
+                    The first row of <em>from</em> becomes the first column
+                    of <em>to</em>, and so forth.
+                    </li>
+                </ol>
+                <h4>Strings</h4>
+                <ol>
+                	<li>
+                    Write a function <em>void toUpper(char *str)</em>
+                    that replaces any lower-case letters in the input string
+                    with their upper-case versions. Other characters are not
+                    changed.
+                    </li>
+                	<li>
+                    Write a function <em>void toLower(char *str)</em>
+                    that replaces any upper-case letters in the input string
+                    with their lower-case versions. Other characters are not
+                    changed.
+                    </li>
+                    <li>
+                    Implement a version of the C string function
+                    <em>char *strcpy(char *s1, const char *s2)</em> that
+					copies string s2 into string s1, return s1 pointer
+                    </li>
+                    <li>
+                    Implement a version of the C string function
+                    <em>char *stpcpy(char *s1, const char *s2)</em> that
+					copies string s2 into string s1, return a pointer to the
+                    '\0' character in s1.
+                    </li>
+                    <li>
+                    Implement a version of the C string function
+					<em>char *strcat(char *s1, const char *s2)</em> that
+                    concatenates string s2 onto the end of string s1, and
+                    return s1 pointer.
+                    </li>
+                    <li>
+                    Implement a version of the C string function
+                    <em>int strcmp(const char *s1, const char *s2)</em> that
+					returns 0 if s1 and s2 are the same; less than 0 if
+                    s1 is lexically less than s2; greater than 0 if s1 is
+                    lexically greater than s2. A string s1 is lexically
+                    less than s2.
+                    </li>
+                    <li>
+                    Implement a version of the C string function
+                    <em>char* strchr(const char*s1, char ch)</em> that
+					returns a pointer to the first occurrence of character
+                    ch in string s1.
+                    </li>
+                    <li>
+                    Implement a version of the C string function
+                    <em>char* strstr(s1, s2)</em> that
+					returns a pointer to the first occurrence of
+                    string s2 in string s1.
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+    </div> <!-- END Tab Container -->
+
+</section>
+
+
+</body>
+
+</html>

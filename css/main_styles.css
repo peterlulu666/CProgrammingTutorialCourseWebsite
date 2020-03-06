@@ -1,0 +1,596 @@
+/*
+*
+* © 2015 Northeastern University
+* College of Computer and Information Science (CCIS)
+*
+*
+*/
+
+
+/* Global Styles */
+
+html {
+    width: 100%;
+    height: 100%;
+    margin:0;
+    padding:0;
+    color:#000;
+}
+
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-size: .8em;
+}
+
+iframe{
+    height: 100%;
+    width: 100%;
+
+}
+
+iframe[seamless] {
+    display: block;
+}
+
+iframe:focus {
+    outline: none;
+}
+
+:focus{
+    outline: none;
+}
+
+/* END Globals */
+/*-------------*/
+
+
+
+
+#banner{
+    width: 100%;
+    min-height: 75px;
+    padding-left: 15px;
+    background-color: #F1F1F1;
+    border-bottom: 1px solid #D3D3D3;
+
+    background: -webkit-linear-gradient(#CBCBCB, #F5F5F5);
+    background: -o-linear-gradient(#CBCBCB, #F5F5F5);
+    background: -moz-linear-gradient(#CBCBCB, #F5F5F5);
+    background: linear-gradient(#CBCBCB, #F5F5F5);
+
+}
+
+#banner_img{
+    position: relative;
+    float: right;
+    margin-top: 10px;
+    margin-left: 150px;
+    margin-right: 28px;
+    width: 350px;
+    z-index: 500;
+
+}
+
+
+#course_title{
+    position: relative;
+    top: 26px;
+    max-width: 940px;
+    font-size: 2em;
+    font-family: "American Typewriter", "Courier New", "Courier", "Monaco", monospace;
+    color: #575757;
+    text-shadow: 2px 6px 8px rgba(0,0,0,0.2),
+                 0px -5px 35px rgba(255,255,255,0.4);
+
+    white-space: pre-wrap;
+    left:25%;
+
+}
+
+#course_num{
+    white-space: nowrap;
+}
+
+.clear_shim{
+    margin-top: 17px;
+    min-height: 15px;
+    clear: both;
+}
+
+
+#main_container{
+    margin-top: 50px;
+
+}
+
+.c_map{
+    margin-top: -20px;
+    margin-left: -18px;
+
+}
+
+#left_nav{
+    float: left;
+    margin-top: 20px;
+    margin-left: -22px;
+    padding-top: 2px;
+    margin-right: 80px;
+    width: 180px;
+    min-height: 300px;
+    height: 100%;
+
+
+}
+
+#left_nav li{
+    list-style-type: none;
+    margin-top: 6px;
+    padding-left: 16px;
+    padding-top: 3px;
+    padding-right: 0px;
+    padding-bottom: 3px;
+    width: 95px;
+    font-size: 1.1em;
+    font-family: Ariel, sans-serif;
+    font-weight: bold;
+    color: #404040;
+
+
+}
+
+#left_nav li ul{
+    margin-top: -6px;
+    margin-left: 13px;
+    margin-bottom: 2px;
+    padding-left: 5px;
+    border-left: 1px solid #D3D3D3;
+}
+
+#left_nav li ul li{
+    margin-top: 2px;
+    width: 25px;
+    font-weight: normal;
+
+}
+
+#left_nav a{
+    text-decoration: none;
+    color: #404040;
+
+}
+
+
+#left_nav a:hover li{
+    background-color: #D3D3D3;
+
+}
+
+
+.active_pg li{
+    background-color: #D3D3D3;
+
+}
+
+
+#tab_container{
+    float: left;
+
+}
+
+#top_tabs{
+    padding-top: 15px;
+    font-size: .9em;
+    border: none;
+
+}
+
+#top_tabs .ui-state-default a{
+    color: #427fd1;
+
+}
+
+#top_tabs .ui-state-default a:hover{
+    background-color: #EBF3F6;
+
+}
+
+#bottom_tabs{
+    margin-top: 10px;
+    padding-top: 15px;
+    font-size: .9em;
+    border: none;
+}
+
+
+#bottom_tabs .ui-state-default a{
+    color: #427fd1;
+
+}
+
+#bottom_tabs .ui-state-default a:hover{
+    background-color: #EBF3F6;
+
+}
+
+.t_div {
+    margin-top: 10px;
+    min-width: 550px;
+    max-width: 767px;
+    min-height: 300px;
+    font-size: 1.1em;
+    color: #4B97C6;
+    line-height: 1.6em;
+    border-top: 1px solid #427fd1;
+
+}
+
+
+a.hlink:link {
+
+    text-decoration: none;
+    color: #6598DE;
+}
+
+/* fixes indent of reading list items without affecting other elements with .hlink class */
+.reading_list li{
+    margin-left: -45px;
+}
+
+a.hlink:visited {
+    color: #B82E00;
+}
+
+a.hlink:hover {
+    text-decoration: none;
+    border-bottom: 1px solid;
+    background-color: #DDD;
+    border-radius: 2px;
+
+}
+
+a.hlink:active {
+    color: #0000FF;
+}
+
+
+
+.tabs_hr{
+    margin-top: 10px;
+    border: none;
+    height: 1px;
+    background-color: #68A7CE;
+}
+
+.mod_overview{
+    margin: 0px;
+    font-family: Palatino, "Palatino Linotype", Georgia, serif;
+    font-size: 1.3em;
+    color: #404040;
+}
+
+.objectives{
+    font-size: 1em;
+    color: #404040;
+}
+
+.assign_info {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+
+}
+
+.due_date{
+    color: #ff2f2f;
+}
+
+.menu_instructions {
+    background: #f5f2f0;
+    font-size: 1.2em;
+}
+
+.code_compare {
+    border-collapse: collapse;
+    width: 100%;
+}
+.code_compare_header {
+    /*border-top: 2px solid;*/
+    border-bottom: 1px solid #BABABA;
+    text-align: left;
+}
+
+.code_style_good {
+    padding-top: 5px;
+    padding-left: 6px ;
+    padding-right: 5px;
+    color: #338333;
+    /*text-align: right;*/
+    font-size: 1.4em;
+    background: #FFFFFF;
+    border: 1px solid #4CC24C;
+
+}
+
+.code_style_bad {
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #B82E00;
+    /*text-align: right;*/
+    font-size: 1.4em;
+    background: #FFFFFF;
+    border: 1px solid #F53E01;
+
+}
+
+.simple_table {
+      border-collapse: collapse;
+      width: 100%;
+}
+
+.simple_table_header th {
+  font-size: 1em;
+  text-align: left;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #FFFFFF;
+  color: #404040;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-style: solid none solid none;
+
+}
+
+.simple_table_body td {
+
+}
+.simple_table .alt {
+  background-color: #e4f2fa;
+}
+/**
+ * Fonts
+ **/
+
+.syllabus_main, .assignment, .readings {
+    font-family: Palatino,"Palatino Linotype", Georgia, serif;
+    color: #404040;
+    font-size: 1.3em;
+}
+
+/**
+ * Syllabus
+ **/
+.syllabus_main {
+    margin-top: 10px;
+    min-width: 550px;
+    max-width: 767px;
+    font-size: 1.1em;
+    /*color: #4B97C6;*/
+    line-height: 1.6em;
+    display: block;
+    float: left;
+}
+
+.table_key {
+    font-weight: bold;
+    text-align: left;
+    padding-right : 15px;
+	vertical-align: text-top;
+}
+
+.contacts {
+    border-collapse: collapse;
+}
+/**
+ * Rubrics
+ **/
+
+.problem_header, .section_header {
+    font-size: 1.4em;
+    color: #4B97C6;
+    font-family: Verdana,Arial,sans-serif;
+}
+
+.subsection_header {
+    /*font-style: italic; */
+    color: #404040;
+    font-size: 1em;
+    font-family: Verdana,Arial,sans-serif;
+}
+
+.section_hr{
+    margin-top: 15px;
+    border: none;
+    height: 1px;
+    background-color: #92B7EB;
+}
+.numeric {
+    text-align: right;
+}
+
+/**
+ * rubric summary table
+ **/
+.rubric_summary_table {
+    width: 50%;
+    border-collapse: collapse;
+}
+
+
+.rubric_summary_header, .contacts_header {
+    font-size: 1.2em;
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #747373;
+    color: #fff;
+}
+
+
+.rubric_summary_body, .contacts_body {
+    color: #404040;
+    line-height: 1.6em;
+}
+
+.rubric_summary_table tr, .contacts tr {
+    border: 1px solid #404040;
+}
+
+.rubric_summary_table td, .contacts_body td{
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.rubric_summary_table th, .contacts th{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.rubric_summary_footer {
+    font-size: 1em;
+    font-weight: bold;
+    text-align: right;
+    color: #427FD1;
+}
+
+.contacts_body td{
+    vertical-align: top;
+}
+
+/**
+ * Schedule
+ **/
+.schedule {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*.schedule td { */
+    /*text-align: center;*/
+/*}*/
+
+.schedule th, .schedule td{
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.schedule_head th {
+    font-size: 1em;
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #FFFFFF;
+    color: #404040;
+
+    border-top: 3px solid;
+    border-bottom: 1px solid;
+    border-style: solid none solid none;
+
+}
+
+.schedule_body {
+    font-family: Palatino, "Palatino Linotype", Georgia, Serif;
+    font-size: 1em;
+    color: #404040;
+}
+
+.schedule .alt {
+    background-color: #e4f2fa;/* rgba(75, 151, 198, 0.3); */
+}
+/**
+ * rubric problem table
+ **/
+
+.rubric_problem_table {
+    width: 50%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+.rubric_problem_table th, .rubric_problem_table td {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.rubric_problem_header th {
+    font-size: 1em;
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #FFFFFF;
+    color: #404040;
+
+    border-top: 3px solid;
+    border-bottom: 1px solid;
+    border-style: solid none solid none;
+
+}
+
+
+.rubric_problem_body {
+    font-family: Palatino, "Palatino Linotype", Georgia, Serif;
+    font-size: 1em;
+    color: #404040;
+}
+
+.rubric_problem_table .alt{
+    background-color: #e4f2fa;/* rgba(75, 151, 198, 0.3); */
+}
+
+.rubric_problem_footer {
+    text-align: right;
+    font-weight: bold;
+    color: #427FD1;
+    border-bottom: 1px solid #404040;
+}
+
+/**
+ * Reading list
+ **/
+
+.reading_list {
+    list-style-type: none;
+    font-size: 1.1em;
+}
+
+/* Point Column Header Styles */
+.rubric_problem_header .points_head{
+    text-align: right;
+
+}
+
+.rubric_summary_header .points_head{
+    text-align: right;
+    padding-right: 10px;
+
+}
+/* END Point Column Header Styles */
+
+
+/**
+ * Tutorials
+ **/
+
+.tutorial {
+    margin: 0px;
+    font-family: Palatino, "Palatino Linotype", Georgia, serif;
+    font-size: 1.3em;
+    color: #404040;
+}
+
+

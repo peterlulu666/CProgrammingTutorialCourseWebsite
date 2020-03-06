@@ -1,0 +1,512 @@
+
+<!--
+*
+* © 2015 Northeastern University
+* College of Computer and Information Science (CCIS)
+*
+*
+-->
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- styles -->
+
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/main_styles.css">
+
+    <!-- source code highlighting using Prism -->
+    <link href="css/prism.css" rel="stylesheet" />
+
+
+    <!-- scripts -->
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+
+
+    <title>Computer Science: C Programming Tutorial</title>
+
+    <script>
+        $(function() {
+            $( "#top_tabs" ).tabs();
+
+        });
+
+        $(function() {
+            $( "#bottom_tabs" ).tabs();
+
+        });
+
+
+    </script>
+
+
+</head>
+
+<body>
+<!-- source code highlighting using Prism -->
+<script src="js/prism.js"></script>
+<script>
+
+</script>
+
+    <div id="banner">
+        <img id="banner_img" src="">
+        <span id="course_title"><span id="course_num">Computer Science:</span> C Programming Tutorial</span>
+        <div class="clear_shim"></div>
+    </div>
+
+
+<section id="main_container">
+
+    <div id="left_nav">
+        <ul>
+            <a href="index.html"><li>HOME</li></a>
+            <a href="syllabus.html"><li>SYLLABUS</li></a>
+<!--
+            <a href="codewalks.html"><li>CODEWALKS</li></a>
+-->
+            <a href="schedule.html"><li>SCHEDULE</li></a>
+            <li>MODULES</li>
+            <li> <ul>
+                <a href="module0.html"><li>0</li></a>
+                <a href="module1.html" class="active_pg"><li>1</li></a>
+                <a href="module2.html"><li>2</li></a>
+                <a href="module3.html"><li>3</li></a>
+                <a href="module4.html"><li>4</li></a>
+                <a href="module5.html"><li>5</li></a>
+                <a href="module6.html"><li>6</li></a>
+<!--
+                <a href="module8.html"><li>8</li></a>
+                <a href="module9.html"><li>9</li></a>
+                <a href="module10.html"><li>10</li></a>
+-->
+            </ul>
+            </li>
+            <a href="http://piazza.com/ccs.neu.edu/fall2018/cs5001/home" target="_blank"><li>PIAZZA</li></a>
+        </ul>
+
+    </div>
+
+
+    <div id="tab_container"> <!-- Tab Container -->
+
+        <div id="top_tabs">
+            <ul>
+                <li><a href="#ttab-1">Overview</a></li>
+                <li><a href="#ttab-3">Objectives</a></li>
+            </ul>
+            <hr class="tabs_hr"/>
+            <div id="ttab-1" class="t_div mod_overview">
+                <h3>Basic Building Blocks</h3>
+                    <p>
+                    In this module, we will look at the basic types of data on which
+                    computers operate, including numerical and logical values, as well as
+                    characters that represent textual information  We will also learn how
+                    to create sequences of instructions that perform calculations on data using
+                    operations that are built-in to the C programming language.
+                    </p>
+
+                    <p>
+                    Next we will learn how to define our own operations that combine
+                    sequences of instructions to perform more sophisticated calculations.
+                    A benefit of these programmer-defined <em>functions</em> or
+                    <em>procedures</em>, is that they can be reused whereever they are
+                    required, rather than having to repeat the same sequences for new
+                    data values.
+                    </p>
+
+                    <p>
+                    Finally, we will learn how to specify conditions that enable performing
+                    different sequences of operations based on current data values. Conditions
+                    can also be used to repeatedly perform the same calculation for data whose
+                    values change as the calculation is performed. We will also learn about
+                    a different way to use functions or procedures to repeat a calculation.
+					</p>
+            </div>
+
+            <div id="ttab-3" class="t_div objectives">
+                <ol>
+                    <li>Understand how programs combine instructions and data.</li>
+                    <li>Explain the concept of a data type and know builtin C data types.</li>
+                    <li>Show how to specify literal values for all the built-in C data types</li>
+                    <li>Be able to print values for the builtin C data types and determine their sizes</li>
+                    <li>Describe how the purpose of a statement in C and how to create one.</li>
+                    <li>Show how to create expressions that combine data, operators, and functions</li>
+                    <li>Explain the concept of operator precidence and how to alter the order that
+                    expressions execute operators</li>
+                    <li>Demonstrate how to create statements using expressions and conditional
+                    constructs.</li>
+                    <li>Identify the types of conditional constructs provided by the C language.</li>
+                    <li>Explain the concept of looping and how logical expressions control loops</li>
+                    <li>Follow the evaluation of a recursive function and explain the role of a
+                    conditional in controlling the recursion</li>
+                </ol>
+            </div>
+        </div>
+
+        <div id="bottom_tabs">
+            <ul>
+                <li><a href="#btab-1">Lecture 2</a></li>
+                <li><a href="#btab-4">Assignment 1</a></li>
+                <li><a href="#btab-2">Lecture 3</a></li>
+                <li><a href="#btab-3">Lecture 4</a></li>
+                <li><a href="#btab-5">Assignment 2</a></li>
+                <li><a href="#btab-6">Exercises</a></li>
+                <li><a href="#btab-7">Programming</a></li>
+                <li><a href="#btab-8">Note</a></li>
+
+            </ul>
+            <hr class="tabs_hr"/>
+            <div id="btab-1" class="t_div readings" >
+                <h3>Program Basics: Types, Statements, Operators, and Expressions</h3>
+				<p>
+                This lesson covers the basics of a program, which includes both data and
+                instructions. It begins by introducing the idea of a <em>data type</em>.
+                </p>
+                <p>
+                Almost every programming language associates data with types. As we saw in
+                Lecture 1, a value stored in memory occupies a certain number of bytes, and
+                computer instructions are designed to operate on data of specific types.
+                These data types and instructions are directly reflected in the C programming
+                language.
+                </p>
+                <p>
+                The C language allows a developer to identify a value in memory by a
+                symbolic name called a <em>variable</em> that indicates its purpose and its
+                data type. This enables a compiler that translates a C program into computer
+                instructions to use the appropriate instructions for the type. The term
+                "variable" is used because the value of that memory may be changed by the
+                program.
+                </p>
+
+                <p>
+                Next the lessson shows how C instructions in the form of <em>statements</em>
+                can be executed one after another to implement a program that performs a
+                particular task. Statements consist of <em>expressions</em> that combine values
+                and operators. <em>Operators</em> transform input values into an output values
+                that can be used as input to other operators. The results are ultimately stored
+                in memory for later use. C enables writing even complicated expressons very
+                compactly, using a notation that is similar to standard mathematical notaton.
+                </p>
+
+                <p>
+                This lesson reviews the built-in C operators for various data types, and
+                illustrates the many ways that data and operators can be combined into
+                expressions and statements.
+                </p>
+
+                <h3>Readings</h3>
+                  <h4>Class presentation</h4>
+            	  <ul class="readling_list">
+                    <li>
+                    <a target="_blank" class="hlink" href=
+                    "resources/Lecture_2_Notes.pdf">Lecture 2 presentation</a>
+                    </li>
+                  </ul>
+
+                  <h4>Other readings</h4>
+                  <ul>
+                    <li>
+                    <a target="_blank" class="hlink" href=
+                    "https://en.wikipedia.org/wiki/C_data_types">
+                    C data types</a> from Wikipedia
+                   (only "Basic types" and "Boolean type" for now; includes table
+                   showing format specifiers for each type).
+                    </li>
+                  </ul>
+
+                  <h4>C Tutorial readings</h4>
+                  <ul>
+                    <li>
+                    <a target="_blank" class="hlink" href=
+                    "https://www.tutorialspoint.com/cprogramming/index.htm">C Tutorial Introduction</a>
+                    </li>
+                    <li>
+                    <a target="_blank" class="hlink" href=
+                    "https://www.tutorialspoint.com/cprogramming/c_overview.htm">Overview</a>
+                    </li>
+                    <li>
+                    <a target="_blank" class="hlink" href=
+                    "https://www.tutorialspoint.com/cprogramming/c_basic_syntaxhtm">Basic Syntax</a>
+                    </li>
+                    <li>
+                    <a target="_blank" class="hlink" href=
+                    "https://www.tutorialspoint.com/cprogramming/c_data_types.htm">Data Types</a>
+                    </li>
+                    <li>
+                    <a target="_blank" class="hlink" href=
+                    "https://www.tutorialspoint.com/cprogramming/c_variables.htm">Variables</a>
+                    </li>
+                    <li>
+                    <a target="_blank" class="hlink" href=
+                    "https://www.tutorialspoint.com/cprogramming/c_constants.htm">Constants</a>
+                    </li>
+                    <li>
+                    <a target="_blank" class="hlink" href=
+                    "https://www.tutorialspoint.com/cprogramming/c_scope_rules.htm">Scope Rules</a>
+                    </li>
+                    <li>
+                    <a target="_blank" class="hlink" href=
+                    "https://www.tutorialspoint.com/cprogramming/c_operators.htm">Operators</a>
+                    </li>
+                  </ul>
+            </div>
+
+            <div id="btab-2" class="t_div readings" >
+                <h3>Defining and Calling Functions</h3>
+				<p>
+                Functions are a way to create new operations that can be combined with built-in
+                operators and other functions. There are two purposes for defining functions. One
+                is to specify some functionality just once and then reuse it wherever it is needed,
+                rather than repeating the same sequence of statements for each new set of values.
+                </p>
+                <p>
+                The other purpose is to make the program more understandable by replacing a sequence
+                of statements with the use of a function whose name describes what it does. This is
+                often referred to as <em>encapsulation</em>. The process of designing a program that
+                breaks a complex problem into a set of functions that are easier to design, use, test,
+                and maintain is known as <em>functional decomposition</em>.
+                </p>
+                <p>
+                In this lesson, we will learn how to define a function with <em>formal parameters</em>
+                that are place-holders for actual values the function uses, and how to <em>return</em>
+                the result of the function. Then we will see how to <em>call</em> the function with
+                <em>actual parameter values</em>, and use the returned result. We will also survey a few
+                of the libraries of pre-defined functions that C provides. Finally, we will look at a
+                few examples of functional decomposition to understand this important design paradigm.
+				</p>
+
+                <h3>Readings</h3>
+                  <h4>Class presentation</h4>
+            	  <ul class="readling_list">
+                    <li>
+                    <a target="_blank" class="hlink" href=
+                    "resources/Lecture_3_Notes.pdf">Lecture 3 presentation</a></em>
+                    </li>
+                  </ul>
+                  <h4>C Tutorial readings</h4>
+                  <ul>
+                    <li>
+                    <a target="_blank" class="hlink" href=
+                    "https://www.tutorialspoint.com/cprogramming/c_functions.htm">Functions</a>
+                    </li>
+                    <li>
+                    <a target="_blank" class="hlink" href=
+                    "https://www.tutorialspoint.com/c_standard_library/index.htm">C Standard Library</a>
+                    </li>
+                  </ul>
+            </div>
+            <div id="btab-3" class="t_div readings" >
+                <h3>Decision Making, Conditional Processing, and Repetition</h3>
+				<p>
+                The sequence of instructions to perform often depends on values that were computed by
+                previous instructions. If a certain value is less than another value, for example, one
+                sequence of instructions applies, otherwise a different sequence of instructions is
+                performed.  The C language provides conditional processing constructs that control
+                which sequence of instructions to perform. These constructs are controlled by logical
+                expressions that combine built-in C logical and comparison operators and functions.
+                </p>
+                <p>
+                Some computations require repeating a set of instructions, using the results of
+                previous instructions or repetitions to determine whether to continue
+                repeating the instructions. The C language provides several conditional processing
+                constructs called <em>loops</em> that repeat a set of instructions until a logical
+                expression becomes false or while a logical expression evaluates as true.
+                </p>
+                <p>
+                In this lesson, we will look at the various conditional processing constructs provided
+                by the C language, and also see how these constructs can be combined to implement more
+                advanced conditional processing operations.
+                </p>
+
+                <h3>Readings</h3>
+                  <h4>Class presentation</h4>
+            	  <ul class="readling_list">
+                    <li>
+                    <a target="_blank" class="hlink" href=
+                    "resources/Lecture_4_Notes.pdf">Lecture 4 presentation</a></em>
+                    </li>
+                  </ul>
+                  <h4>C Tutorial readings</h4>
+                  <ul>
+                    <li>
+                    <a target="_blank" class="hlink" href=
+                    "https://www.tutorialspoint.com/cprogramming/c_decision_making.htm">
+                    Decision Making</a>
+                    </li>
+                    <li>
+                    <a target="_blank" class="hlink" href=
+                    "https://www.tutorialspoint.com/cprogramming/c_loops.htm">Loops</a>
+                    </li>
+<!--
+                    <li>
+                    <a target="_blank" class="hlink" href=
+                    "https://www.tutorialspoint.com/cprogramming/c_variable_arguments.htm">
+                    Variable Arguments</a>
+                    </li>
+                    <li>
+                    <a target="_blank" class="hlink" href=
+                    "https://www.tutorialspoint.com/cprogramming/c_recursion.htm">Recursion</a>
+                    </li>
+-->
+                  </ul>
+            </div>
+
+            <div id="btab-4" class="t_div assignment" >
+                <ul class="assign_info">
+                    <li>
+                    DUE DATE: <span class="due_date">Wed, 12 Sept by 11:59:59pm</span><br/>
+                    </li>
+                </ul>
+                <p>
+                Create a C project "assignment-1"
+                in Eclipse or another IDE. Create a source
+                directory "src" in the project.
+                Create an empty C file "assignment-1.c" and
+                edit it to look like this:
+                </p>
+                <pre>
+/**
+ * @file assignment-1.c
+ * @author  YOUR NAME
+ * @date    THE DATE
+ *
+ * This is the first programming assignment for CS 5001.
+ */
+#include &lt;stdbool.h>
+#include &lt;stdio.h>
+
+/**
+ * The code in this function is the solution to the assignment.
+ */
+int main(void) {
+	// YOUR CODE HERE
+}
+                </pre>
+              <p>
+                Define and initialize the following variable or constant with the appropriate type and value. In some cases, you will use operators to compute the value.
+                </p>
+                <ol>
+                  <li>An unsigned integer constant <em>squareOfThree</em> initialized by calculating
+                  the square of 3</li>
+                  <li>A double precision floating point constant <em>e </em>initialized to Euler's constant 2.718281828459045</li>
+                  <li>A boolean variable<em> isGreaterThan </em>initialized to the logical expression<em> 2.8 </em>&gt; <em>e</em></li>
+                  <li>An integer variable <em>quotient</em> initialized to the ratio of sum 2+4+5
+                  divided by 3</li>
+                  <li>A short integer variable <em>remainder</em> that is the remainder of
+                  11 with 3</li>
+                  <li>A double precision variable <em>greaterValue </em>that is 2.8<em></em> if <em>isGreaterThan</em> is true and <em>e if isGreaterThan</em> is false.
+                  <li>A single precision floating point constant <em>oneTenth</em>
+                  initialized to the ratio of 1.0 divided by 10.0</li>
+                  <li>A character <em>hex7A</em> whose value is the hexadecimal constant 7A.</li>
+                  <li>A character constant <em>charZ</em> initialized to 'Z'.</li>
+                  <li>An unsigned short variable <em>numLetters</em> that is the number of letters between 'A' and 'Z' inclusive.</li>
+                </ol>
+                <p>For each variable or constant, provide a printf() statement using the apropriate field specifier that prints its name,
+                its value, and its size in bytes.</p>
+          </div>
+
+            <div id="btab-5" class="t_div assignment" >
+                <ul class="assign_info">
+                    <li>
+                    DUE DATE: <span class="due_date">Mon, 17 Sept before 11:59:59pm</span><br/>
+                    </li>
+                </ul>
+                Coming soon.
+
+                <p>
+                Include all the specified functions in a file "assignment-2.c". Include a main
+                program that tests the functions by calling them with test data and printing the results returned
+                by the functions. Include comments for the tests that describe their purposes.
+                Label the output so someone else can understand it. </p>
+                <p>Provide a documentation block for for the file that includes the name of the file, its creation date, its author, and a brief description the file. Also provide a documentation block each function describing its purpose,
+                parameters, and return values as appropriate. Check your file in to the CCIS
+                GitHub repository 2018FACS5001SV/assignment-2-<em>ccisID</em> that was created
+                by your instructor for your ccisID.
+                </p>
+
+                <h4>Function <em>countCalls</em></h4>
+                <p>
+                Create a function <em>unsigned int countCalls(bool reset)</em>
+                with a static unsigned in <em>problem1Count</em> to count the number of
+                times the function is called. If called with <em>false</em>, the function increments
+                <em>problem1Count</em> and returns 0.
+                If called with <em>true</em>, the function resets <em>problem1Count</em> to 0 and
+                returns the number of times the function was called since the last time it was reset.
+                </p>
+                <p>
+                Call this function from <em>main</em> several times with <em>false</em> to build up a
+                count, then call it with <em>true</em>. Report the value returned from the function
+                for each call. By way of example, if the function is called four times with
+                <em>false</em>, it returns 0 each time. If then called with <em>true</em>, it
+                returns 4 and resets <em>problem1Count</em> back to 0.
+				</p>
+
+                <h4>Function pi</h4>
+				<p>
+                Write a function <em>double pi()</em> that approximates value of pi to the precision of a double:
+                3.14159265358979 using an approximation
+                technique that is the sum of the series
+                <br/>
+                3 + 4/(2*3*4) - 4/(4*5*6) + 4/(6*7*8) - 4/(8*9*10) ...
+                </p>
+                <p>
+                Use a loop to add successive tems of the series until the previous sum and sum with the next term are the same.  Return this value as the result of the function.
+                </p>
+                <h4>Function <em>daysInMonth</em></h4>
+                <p>
+                Write a function <em>unsigned short daysInMonth(unsigned int month)</em>. The function
+                takes a month number between 1 (Janauary) and 12 (December), and uses a switch
+                statement to set a local unsigned short variable <em>numDays</em> to the number of days in any month (assuming 28 for February). Return <em>numDays</em> at the end of the function.  If the input value
+                is not a valid month number, return 0 from the function. Be sure to include this behaviour in your function documenation.</p>
+
+          </div>
+            <div id="btab-6" class="t_div assignment" >
+            	<h3>Additional Exercises</h3>
+                <p>Here are additional exercises that will give you more practice with the subject material in this module.</p>
+                Coming soon.
+            </div>
+
+            <div id="btab-7" class="t_div assignment" >
+            	<h3>Assignment 1</h3>
+            	<embed  src="https://www.onlinetool.io/gitoembed/widget?url=https%3A%2F%2Fgithub.com%2Fpeterlulu666%2FCProgrammingTutorial%2Fblob%2Fmaster%2Fassignment-1.c&theme=monokai"
+                        width="100%"
+                        height="850">
+                <h3>Assignment 2</h3>
+                <object data="https://www.onlinetool.io/gitoembed/widget?url=https%3A%2F%2Fgithub.com%2Fpeterlulu666%2FCProgrammingTutorial%2Fblob%2Fmaster%2Fassignment-2.c&theme=monokai"
+                        width="100%"
+                        height="850">
+                </object>
+
+
+            </div>
+
+            <div id="btab-8" class="t_div assignment" >
+            	<h3>Note</h3>
+                <object data="assets/Time Complexity of for Loops · GitBook.htm"
+                        width="100%"
+                        height="9000">
+                </object>
+
+
+            </div>
+
+        </div>
+
+    </div> <!-- END Tab Container -->
+
+</section>
+
+
+</body>
+
+</html>
